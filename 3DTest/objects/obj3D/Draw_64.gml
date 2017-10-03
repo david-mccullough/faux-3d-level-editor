@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-angle = 0;
-targetAngle = 0;
+draw_text(32,32,"draw type: " + string(type));

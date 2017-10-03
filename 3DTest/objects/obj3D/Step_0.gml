@@ -14,4 +14,14 @@ trgX %= 360;
 
 trgY = dsin(trgX);
 
-show_debug_message(string(trgX) + "," + string(trgY));
+image_angle = angle+objCamera.angle;
+
+if keyboard_check_pressed(vk_up)
+{
+	type++;
+}
+else if keyboard_check_pressed(vk_down)
+{
+	type--;
+}
+type = clamp(type,0,3);
