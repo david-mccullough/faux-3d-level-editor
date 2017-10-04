@@ -127,11 +127,27 @@
             }
         },
         {
+            "Key": "9474423d-c56a-419b-b52c-be0c83fe32c7",
+            "Value": {
+                "id": "525ccc92-cea4-4f5b-841a-7d9f4d77d8ef",
+                "resourcePath": "objects\\obj3DRustle\\obj3DRustle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9702aa75-a070-469c-bcee-eadad2ea99a0",
             "Value": {
                 "id": "be98ac6f-ca93-4874-9707-3d562469e2fc",
                 "resourcePath": "views\\9702aa75-a070-469c-bcee-eadad2ea99a0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a3126b44-e319-48b4-aa06-bcbf6a0985ac",
+            "Value": {
+                "id": "d698ccd5-68e8-4d5f-a5ca-f27e1a119a78",
+                "resourcePath": "sprites\\sprGrass\\sprGrass.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -221,10 +237,18 @@
                 "resourcePath": "views\\fdc96487-bcb4-4403-bf04-7c1b8dddff63.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fe44cb8d-0c65-4623-8446-8d2421d790ae",
+            "Value": {
+                "id": "b97af4e4-0f64-4387-83c3-b105331d5932",
+                "resourcePath": "scripts\\DampSin\\DampSin.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
-        
+        "fe44cb8d-0c65-4623-8446-8d2421d790ae"
     ],
     "tutorial": ""
 }
