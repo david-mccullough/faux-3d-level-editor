@@ -5,7 +5,6 @@ enum drawType
 	rootedSway,
 	sway,
 	bounce,
-
 }
 
 type = drawType.static;
@@ -17,5 +16,5 @@ trgMag = 5;
 trgY = 0;
 
 angle = 0;
-
 sep = 1
+

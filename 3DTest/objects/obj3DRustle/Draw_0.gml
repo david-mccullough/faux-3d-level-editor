@@ -3,7 +3,7 @@
 for (var i = 0; i < image_number; i++) 
 {
 trgY = trgMag*dsin(trgX+i*8)*i/10
-if abs(trgY - 0) < .1 then trgY = 0;
+//if abs(trgY - 0) < .1 then trgY = 0;
 
 draw_sprite_ext(sprite_index, i, x + trgY, y - i*sep, image_xscale, image_yscale, image_angle, c_white, image_alpha);
 if keyboard_check(vk_rshift)
