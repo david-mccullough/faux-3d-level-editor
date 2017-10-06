@@ -1,4 +1,6 @@
 /// @description 
+
+event_inherited()
 enum drawType
 {
 	static,
