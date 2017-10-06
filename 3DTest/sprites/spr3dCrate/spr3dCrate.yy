@@ -2,7 +2,7 @@
     "id": "2f40125d-c20e-4bed-9243-2c5f21e98853",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprCrate",
+    "name": "spr3dCrate",
     "For3D": false,
     "HTile": false,
     "VTile": false,

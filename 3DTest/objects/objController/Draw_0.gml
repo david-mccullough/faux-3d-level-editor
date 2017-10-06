@@ -19,10 +19,16 @@ if ds_exists(global.depthGrid, ds_type_grid)
 		global.depthGrid[# 0, yy] = self;
 		global.depthGrid[# 1, yy] = self.y + yDepthOrigin;
 		++yy;
+		
+		//ground items
+		if !sortDepth
+		{
+			DrawObject();
+		}
 	}
 	
 	/// Sort the grid and draw instances in order ///
-	ds_grid_sort(global.depthGrid, 1, false);
+	ds_grid_sort(global.depthGrid, 1, true);
 	
 	yy = 0;
 	repeat(height)
@@ -30,8 +36,11 @@ if ds_exists(global.depthGrid, ds_type_grid)
 		// draw instance and set depth
 		var instanceID = global.depthGrid[# 0, yy];
 		with instanceID {
-			depth = yy;
-			event_perform(ev_draw,0)
+			if sortDepth
+			{
+				myDepth = yy;
+				DrawObject();
+			}
 		}
 		
 		++yy;

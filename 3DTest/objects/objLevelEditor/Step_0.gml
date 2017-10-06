@@ -1,9 +1,28 @@
-#region // editor states
 x = mouse_x;
 y = mouse_y;
+if state != editorState.idle
+{
+	//update canPlace
+	canPlace = CheckCanPlace(x,y,editObject);
+	
+	// Adjust angle //
+	var mult = 1;
+	if shiftHeld {mult = 30}
+		
+	angle += mult*(mwUp - mwDown);
+	if (angle < 0) {angle = 359}
+	else if (angle >= 360) {angle = 0}
+		
+	//snap to multiples of 30
+	if shiftHeld && (mwUp || mwDown) {
+	angle = floor(angle/30)*30
+	}
+}
+
 switch (state)
 {
     case editorState.idle:
+	#region //idle state
 	
 		/// Get top most object currently focused
 		var tempListNum = 0
@@ -16,7 +35,7 @@ switch (state)
 			hit = ds_list_find_value(hitList, 0);
 			for (var i = 0; i < ds_list_size(hitList); i++)
 			{
-				if (ds_list_find_value(hitList, i).depth < hit.depth)
+				if (ds_list_find_value(hitList, i).myDepth < hit.myDepth)
 				{
 					hit = ds_list_find_value(hitList, i);
 				}
@@ -24,10 +43,17 @@ switch (state)
 		
 		if (mblPressed) //left mb pressed...
 		{
-			// if we have a reference for a focused object, select it
+			// if we have a reference for a focused object...
 			if (hit != noone)
 			{
-				hit.editState = editorState.selected;
+				//delete it but copy its relevant data
+				angle = hit.angle;
+				editIdentity = hit.identity;
+				editOject = asset_get_index("obj"+editIdentity)
+				editSprite= asset_get_index("spr"+editIdentity)
+				
+				instance_destroy(hit);
+								
 				state = editorState.inst;
 			}
 		}
@@ -50,41 +76,41 @@ switch (state)
 		}
 		
     break;
+	#endregion
+    
+	case editorState.inst:
+	#region //insance selected state
 	
-		
-    case editorState.inst:
+		//if we let go of mbleft...
+		if mblReleased
+		{
+			//create copy of instance
+			var temp = instance_create_depth(mouse_x,mouse_y, 0, editObject);
+			temp.angle = angle;
+			
+			state = editorState.idle;
+		}
 	
 	break;
+	#endregion
 	
 	case editorState.paint:
+	#region //paint state
+	
 		if paintKeyPressed
 		{
 			state = editorState.idle;
 		}
-		if mblPressed
+		if mblPressed && canPlace
 		{
-			var temp = instance_create_depth(mouse_x,mouse_y,0,obj3D);
+			var temp = instance_create_depth(mouse_x,mouse_y, 0, editObject);
 			temp.angle = angle;
 		}
-		
 	
 	break;
+	#endregion
+	
 }
 
-#endregion
 
-if state != editorState.idle
-{
-	// Adjust angle //
-	var mult = 1;
-	if shiftHeld {mult = 30}
-		
-	angle += mult*(mwUp - mwDown);
-	if (angle < 0) {angle = 359}
-	else if (angle >= 360) {angle = 0}
-		
-	//snap to multiples of 30
-	if shiftHeld && (mwUp || mwDown) {
-	angle = floor(angle/30)*30
-	}
-}
+

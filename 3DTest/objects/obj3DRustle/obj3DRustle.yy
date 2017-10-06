@@ -2,7 +2,7 @@
     "id": "9474423d-c56a-419b-b52c-be0c83fe32c7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj3DRustle",
+    "name": "obj3dRustle",
     "eventList": [
         {
             "id": "a3156a80-6169-4191-8d81-f2c0fdea56e0",

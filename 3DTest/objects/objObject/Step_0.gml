@@ -9,14 +9,12 @@ if global.levelEditorEnabled
 		break;
 		
 		case editorState.focused:
-			drawColor = make_colour_rgb(150, 255, 200);
-			//gpu_set_blendmode(bm_subtract);
+			drawColor = C_FOCUS
 			editState = editorState.idle;
 		break;
 		
 		case editorState.selected:
-			drawColor = make_colour_rgb(50, 255, 100);
-			//gpu_set_blendmode(bm_subtract);
+			drawColor = C_TRUE
 		break;
 
 	}

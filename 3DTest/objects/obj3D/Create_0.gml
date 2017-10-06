@@ -8,7 +8,7 @@ enum drawType
 	sway,
 	bounce,
 }
-
+is3D = true
 type = drawType.static;
 image_speed = 0;
 
@@ -19,4 +19,3 @@ trgY = 0;
 
 angle = 0;
 sep = 1
-
