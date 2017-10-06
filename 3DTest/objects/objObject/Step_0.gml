@@ -1,4 +1,4 @@
-/// @description based on editState
+/// @description Level editor state
 if global.levelEditorEnabled
 {
 	switch editState
