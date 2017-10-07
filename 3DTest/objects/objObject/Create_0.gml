@@ -1,7 +1,9 @@
 /// @description 
 editState = editorState.idle;
 drawColor = c_white;
-identity = string_delete(object_get_name(object_index),0,3);
+//get identity from object name
+//is this how it should work? maybe just use macros
+identity = string_delete(object_get_name(object_index),1,3);
 show_debug_message(identity)
 
 //required for depth system

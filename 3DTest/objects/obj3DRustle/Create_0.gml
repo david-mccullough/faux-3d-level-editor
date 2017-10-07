@@ -1,6 +1,6 @@
 /// @description 
-
-type = drawType.static;
+event_inherited()
+type = drawType.rootedSway;
 image_speed = 0;
 
 trgX = 0; //0 to 360

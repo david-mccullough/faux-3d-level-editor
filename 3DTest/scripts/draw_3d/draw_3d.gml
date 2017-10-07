@@ -19,7 +19,7 @@ var col		= argument[7]
 var alpha	= argument[8]
 
 
-for (var i = 0; i < spr.image_number; i++) 
+for (var i = 0; i < sprite_get_number(spr); i++) 
 {
 draw_sprite_ext(spr, i, xx, yy - i*sep, xscl, yscl, angle, col, alpha);
 }

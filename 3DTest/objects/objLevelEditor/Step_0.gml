@@ -1,5 +1,5 @@
-x = mouse_x;
-y = mouse_y;
+x = round(mouse_x);
+y = round(mouse_y);
 if state != editorState.idle
 {
 	//update canPlace
@@ -49,7 +49,8 @@ switch (state)
 				//delete it but copy its relevant data
 				angle = hit.angle;
 				editIdentity = hit.identity;
-				editOject = asset_get_index("obj"+editIdentity)
+				show_debug_message("selected identity: " + editIdentity)
+				editObject = asset_get_index("obj"+editIdentity)
 				editSprite= asset_get_index("spr"+editIdentity)
 				
 				instance_destroy(hit);

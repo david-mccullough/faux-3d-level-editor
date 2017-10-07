@@ -1,5 +1,5 @@
 /// @description Insert description here
-
+depth = -100
 enum editorState
 {
 	idle,
