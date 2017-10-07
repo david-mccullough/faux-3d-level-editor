@@ -17,7 +17,7 @@ enum displaySizes
 	d120 = 120
 }
 
-global.displaySize = displaySizes.d120;
+global.displaySize = displaySizes.d100;
 global.isFullScreen = false;
 
 //TODO Load Resolution Preferences

@@ -4,7 +4,7 @@ angle = 0;
 angleTarget = 0;
 
 //create camera
-global.cameraSize = 40;
+global.cameraSize = 30;
 global.cameraWidth = global.aspectRatioW*global.cameraSize;
 global.cameraHeight = global.aspectRatioH*global.cameraSize;
 view_camera[0] = camera_create_view(0,0,global.cameraWidth,global.cameraHeight,0,-1,0,0,0,0);

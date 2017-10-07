@@ -26,5 +26,5 @@ window_set_size(global.displayWidth,global.displayHeight)
 }
 
 
-show_message("aspect ratio is " + string(global.aspectRatioW)+ ":" + string(global.aspectRatioH) +"\n" + 
+show_debug_message("aspect ratio is " + string(global.aspectRatioW)+ ":" + string(global.aspectRatioH) +"\n" + 
 string(global.displayWidth)+ "x" + string(global.displayHeight))

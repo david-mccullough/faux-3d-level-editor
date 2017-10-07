@@ -1,18 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
-if keyboard_check_pressed(ord("1"))
+var temp = global.displaySize
+if keyboard_check_pressed(vk_f1)
 {
 	global.displaySize = displaySizes.d50;
 }
-if keyboard_check_pressed(ord("2"))
+if keyboard_check_pressed(vk_f2)
 {
 	global.displaySize = displaySizes.d80;
 }
-if keyboard_check_pressed(ord("3"))
+if keyboard_check_pressed(vk_f3)
 {
 	global.displaySize = displaySizes.d100;
 }
-if keyboard_check_pressed(ord("4"))
+if keyboard_check_pressed(vk_f4)
 {
 	global.displaySize = displaySizes.d120;
 }
+
+if temp != global.displaySize
+WindowUpdate()
