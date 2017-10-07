@@ -255,14 +255,6 @@
             }
         },
         {
-            "Key": "8f21746c-6dcb-4f6b-bb2c-2a1493cbd727",
-            "Value": {
-                "id": "c661aabc-07b3-42e3-ae50-d92af705cbe6",
-                "resourcePath": "objects\\objSetup\\objSetup.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "9474423d-c56a-419b-b52c-be0c83fe32c7",
             "Value": {
                 "id": "525ccc92-cea4-4f5b-841a-7d9f4d77d8ef",
@@ -418,7 +410,7 @@
             "Key": "bbabc386-2014-45be-a64f-72c878704cb4",
             "Value": {
                 "id": "8f51ad8f-f81c-4763-98b7-8b7d9fb8757c",
-                "resourcePath": "objects\\objDisplay\\objDisplay.yy",
+                "resourcePath": "objects\\objDisplayManager\\objDisplayManager.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -484,6 +476,22 @@
                 "id": "9858a6cc-f4fd-48f4-b103-6bea81fa0f00",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cee7c23a-243f-42e6-9574-0d766ce2812d",
+            "Value": {
+                "id": "996c06b1-a210-463c-a0b5-994c04de8333",
+                "resourcePath": "rooms\\room01\\room01.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "d2379b24-80ca-4833-91a9-b6562262d72c",
+            "Value": {
+                "id": "80e13fad-4821-409f-8f46-9a8b478ae1df",
+                "resourcePath": "objects\\objGUI\\objGUI.yy",
+                "resourceType": "GMObject"
             }
         },
         {

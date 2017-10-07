@@ -2,7 +2,7 @@
     "id": "bbabc386-2014-45be-a64f-72c878704cb4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objDisplay",
+    "name": "objDisplayManager",
     "eventList": [
         {
             "id": "3c6b1eff-0b6a-4fd0-b852-ae643dfcd8fa",
@@ -47,7 +47,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,

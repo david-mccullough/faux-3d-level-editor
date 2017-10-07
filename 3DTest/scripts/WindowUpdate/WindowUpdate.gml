@@ -17,7 +17,12 @@ view_set_wport(global.camera,global.displayWidth)
 view_set_wport(global.camera,global.displayHeight)
 
 surface_resize(application_surface,global.displayWidth,global.displayHeight);
-with objDisplay
+
+display_set_gui_size(global.displayWidth,global.displayHeight);
+global.guiScaleX = global.displayWidth/global.cameraWidth;
+global.guiScaleY = 1//global.cameraHeight/global.displayHeight;
+
+with objDisplayManager
 {
 	alarm[0] = 1;
 }

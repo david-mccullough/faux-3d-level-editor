@@ -25,6 +25,14 @@ editSprite = spr3dCrate;
 editColor = C_TRUE
 canPlace = true;
 
+sortDepth = true;
+myDepth = 0;
+
+//control
+drag_x = 0;
+drag_y = 0;
+
+
 ds_list_add(global.levels, "testLevel");
 
 

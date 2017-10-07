@@ -8,6 +8,8 @@ mblReleased = mouse_check_button_released(mb_left);
 mbmReleased = mouse_check_button_released(mb_middle);
 mbrReleased = mouse_check_button_released(mb_right);
 
+mbmHeld = mouse_check_button(mb_middle)
+
 mwUp = mouse_wheel_up()
 mwDown = mouse_wheel_down()
 

@@ -26,6 +26,11 @@ if ds_exists(global.depthGrid, ds_type_grid)
 			DrawObject();
 		}
 	}
+	with objLevelEditor
+	{
+		global.depthGrid[# 0, yy] = self;
+		global.depthGrid[# 1, yy] = self.y;
+	}
 	
 	/// Sort the grid and draw instances in order ///
 	ds_grid_sort(global.depthGrid, 1, true);
@@ -36,11 +41,16 @@ if ds_exists(global.depthGrid, ds_type_grid)
 		// draw instance and set depth
 		var instanceID = global.depthGrid[# 0, yy];
 		with instanceID {
-			if sortDepth
+			if object_index == objLevelEditor
+			{
+				depth = yy;
+			}
+			else if sortDepth
 			{
 				myDepth = yy;
 				DrawObject();
 			}
+
 		}
 		
 		++yy;

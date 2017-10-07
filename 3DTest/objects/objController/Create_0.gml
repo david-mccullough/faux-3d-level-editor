@@ -9,6 +9,8 @@
 
 #endregion
 
+draw_set_font(F_DEBUG)
+
 #region // Object Name Macros
 	
 	#region //3D
