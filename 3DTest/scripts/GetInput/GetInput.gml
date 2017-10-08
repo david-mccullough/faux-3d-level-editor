@@ -14,6 +14,12 @@ mwUp = mouse_wheel_up()
 mwDown = mouse_wheel_down()
 
 /// Keys
+globalvar paintKeyPressed;
+globalvar shiftPressed,shiftHeld;
+globalvar controlPressed, controlHeld;
 paintKeyPressed = keyboard_check_pressed(ord("P"));
 shiftPressed = keyboard_check_pressed(vk_shift);
 shiftHeld = keyboard_check(vk_shift);
+controlPressed = keyboard_check_pressed(vk_control)
+controlHeld = keyboard_check(vk_control)
+

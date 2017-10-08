@@ -13,7 +13,6 @@ enum editorState
 
 state = editorState.idle;
 
-global.buff = buffer_create(4000, buffer_fixed, 1);
 global.levels = ds_list_create();
 
 angle = 0;

@@ -12,8 +12,7 @@
         "eeddc1ed-d1f9-4a96-b4d8-1793d68f53e5",
         "96ee7deb-4378-479c-95e1-cd8b1c1f3f8e",
         "2d0d3d27-bd75-4963-8443-2f5ffbd102ae",
-        "44d7bc2e-4d72-4f3c-8d0b-672e76e1a557",
-        "724de76f-83be-4f93-939f-c31635b8b112"
+        "44d7bc2e-4d72-4f3c-8d0b-672e76e1a557"
     ],
     "filterType": "GMScript",
     "folderName": "View and Display",

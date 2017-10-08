@@ -1,5 +1,14 @@
 x = round(mouse_x);
 y = round(mouse_y);
+
+//Saving
+if controlHeld && keyboard_check_pressed(ord("S"))
+{
+	show_debug_message("attempting to save level")
+	LevelSave();
+}
+
+#region //angle and canPlace
 if state != editorState.idle
 {
 	//update canPlace
@@ -18,6 +27,7 @@ if state != editorState.idle
 	angle = floor(angle/30)*30
 	}
 }
+#endregion
 
 #region//Pan view
 

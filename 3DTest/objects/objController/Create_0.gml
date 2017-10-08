@@ -31,12 +31,13 @@ draw_set_font(F_DEBUG)
 #endregion
 
 #region // Level Editor
+
 global.levelEditorEnabled = false;
 ToggleLevelEditor();
+
 #endregion
 
 #region // Depth Grid Init
-
 
 global.depthGrid = 0;
 // create grid if not yet created
@@ -44,5 +45,24 @@ if !ds_exists(global.depthGrid, ds_type_grid)
 {
 	global.depthGrid = ds_grid_create(2,0);
 }
+
 #endregion
+
+#region // File Directory
+
+#macro DIR_LEVELS "Levels\\"
+directory_create("Levels\\")
+if !file_exists("readme.txt")
+{
+	var readme = file_text_open_write("readme.txt");
+	file_text_write_string(readme,"hi");
+	file_text_close(readme);
+}
+
+#macro DIR_STORAGE filename_path("readme.txt")
+show_message_async(DIR_STORAGE)
+
+#endregion
+
+
 

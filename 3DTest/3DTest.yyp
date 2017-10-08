@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "3e8eda01-5c03-4369-91bb-3fe0f7f8dd4a",
+            "Value": {
+                "id": "fe5013aa-720d-431d-aaaa-27648f61d044",
+                "resourcePath": "scripts\\LevelSave\\LevelSave.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3f42c48b-46bb-4bd6-8090-340f712bd3fd",
             "Value": {
                 "id": "92edd062-b350-4605-9279-44716e68072f",
@@ -299,6 +307,14 @@
             "Value": {
                 "id": "84c5aa75-196d-455b-ba3a-0a29736d89b3",
                 "resourcePath": "sprites\\icoControl\\icoControl.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4ee61746-5ca7-49e5-b27f-8adea0fa0c79",
+            "Value": {
+                "id": "727301d1-db34-4193-8b8a-4e877354ab2f",
+                "resourcePath": "sprites\\sprCursor\\sprCursor.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -420,6 +436,14 @@
                 "id": "821be44e-ec83-4152-b66e-791cc9e05e14",
                 "resourcePath": "scripts\\within\\within.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "70834f3e-a995-4067-beba-d118c1ab4f10",
+            "Value": {
+                "id": "fd397da5-5b0a-4841-8a06-b807278e564e",
+                "resourcePath": "views\\70834f3e-a995-4067-beba-d118c1ab4f10.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -890,7 +914,7 @@
             "Key": "c0ea00b7-5210-40b1-ba36-6ecea353dadc",
             "Value": {
                 "id": "968725bb-501a-4a21-ac41-0d56bf3e150e",
-                "resourcePath": "sprites\\sprCursor\\sprCursor.yy",
+                "resourcePath": "sprites\\sprCursor2\\sprCursor2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1136,30 +1160,6 @@
         }
     ],
     "script_order": [
-        "3fabe446-55a5-4b87-bacc-9d017345fb45",
-        "9916d8b4-abe8-45b4-b15f-13f494a62e17",
-        "b0eb78ec-7c2c-4ea0-b8b9-514a2f9ddfc5",
-        "bd4903cc-e433-43db-b363-c19b85fe6dc5",
-        "a4d1103e-ce31-42f4-a321-02a2d0ca1326",
-        "ad20b03a-a603-4186-b01c-753d6c689c03",
-        "21ed0320-ce3a-4f0e-bc15-00a3a2e4e45f",
-        "a3e0f56d-840e-4991-90e4-1260e233137a",
-        "33ff4b5e-574b-4fe0-b9e2-71d999c9e57f",
-        "9bb3cd6d-62b0-4bc8-ac3d-8b42fc4169fd",
-        "ec7da05e-4176-4868-a49c-7aaa8be6da14",
-        "eeddc1ed-d1f9-4a96-b4d8-1793d68f53e5",
-        "96ee7deb-4378-479c-95e1-cd8b1c1f3f8e",
-        "2d0d3d27-bd75-4963-8443-2f5ffbd102ae",
-        "44d7bc2e-4d72-4f3c-8d0b-672e76e1a557",
-        "f17e3b77-da6f-41b3-9b5a-57d62f1e00fe",
-        "d596f316-be45-45a4-a055-3f1c2d425670",
-        "8f556299-dbda-4936-9a52-82e96b047a64",
-        "c4e39f12-abae-4109-b9dd-d14d7ef162d1",
-        "cf8bbe4b-6db9-41cd-8aeb-de60ddb0c7cb",
-        "93302c97-27e5-4725-b8ef-9a61137f1847",
-        "a21d0af7-5943-4ff5-8b67-4f08e5c6239b",
-        "b7a7213c-5451-4825-b103-622852490c11",
-        "9c2eda38-a885-4004-893e-c83bd2de5825",
         "23e69475-6317-441e-a847-18938a1067f6",
         "1a2ce629-1937-4c2b-a9c9-d420efce30be",
         "689f540a-4255-4c3e-a915-90e30ab59fa7",
@@ -1190,9 +1190,34 @@
         "45ffe77d-2e66-47f8-92f7-8482bd8e9e35",
         "8e5164db-4a29-4e92-81e9-47e4ffb06129",
         "fe44cb8d-0c65-4623-8446-8d2421d790ae",
+        "f17e3b77-da6f-41b3-9b5a-57d62f1e00fe",
+        "d596f316-be45-45a4-a055-3f1c2d425670",
+        "8f556299-dbda-4936-9a52-82e96b047a64",
+        "c4e39f12-abae-4109-b9dd-d14d7ef162d1",
+        "cf8bbe4b-6db9-41cd-8aeb-de60ddb0c7cb",
+        "93302c97-27e5-4725-b8ef-9a61137f1847",
+        "a21d0af7-5943-4ff5-8b67-4f08e5c6239b",
+        "b7a7213c-5451-4825-b103-622852490c11",
+        "9c2eda38-a885-4004-893e-c83bd2de5825",
+        "3fabe446-55a5-4b87-bacc-9d017345fb45",
+        "9916d8b4-abe8-45b4-b15f-13f494a62e17",
+        "b0eb78ec-7c2c-4ea0-b8b9-514a2f9ddfc5",
+        "bd4903cc-e433-43db-b363-c19b85fe6dc5",
+        "a4d1103e-ce31-42f4-a321-02a2d0ca1326",
+        "ad20b03a-a603-4186-b01c-753d6c689c03",
+        "21ed0320-ce3a-4f0e-bc15-00a3a2e4e45f",
+        "a3e0f56d-840e-4991-90e4-1260e233137a",
+        "33ff4b5e-574b-4fe0-b9e2-71d999c9e57f",
+        "9bb3cd6d-62b0-4bc8-ac3d-8b42fc4169fd",
+        "ec7da05e-4176-4868-a49c-7aaa8be6da14",
+        "eeddc1ed-d1f9-4a96-b4d8-1793d68f53e5",
+        "96ee7deb-4378-479c-95e1-cd8b1c1f3f8e",
+        "2d0d3d27-bd75-4963-8443-2f5ffbd102ae",
+        "44d7bc2e-4d72-4f3c-8d0b-672e76e1a557",
         "b82d832e-60ab-4f2f-8790-69f59aada389",
         "9e97e819-0e0e-4d28-85b3-a74fe535c199",
-        "300cd595-dfeb-4da7-a2c3-f0aa5359b0eb"
+        "300cd595-dfeb-4da7-a2c3-f0aa5359b0eb",
+        "3e8eda01-5c03-4369-91bb-3fe0f7f8dd4a"
     ],
     "tutorial": ""
 }
