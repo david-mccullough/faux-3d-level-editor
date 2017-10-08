@@ -2,7 +2,7 @@
     "id": "9474423d-c56a-419b-b52c-be0c83fe32c7",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj3dRustle",
+    "name": "obj3dSway",
     "eventList": [
         {
             "id": "a3156a80-6169-4191-8d81-f2c0fdea56e0",
@@ -61,6 +61,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "solid": false,
-    "spriteId": "a3126b44-e319-48b4-aa06-bcbf6a0985ac",
+    "spriteId": "a3fa3608-814c-419f-8a93-38bae647d34b",
     "visible": true
 }

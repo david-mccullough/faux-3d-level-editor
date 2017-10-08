@@ -30,8 +30,8 @@ repeat(size)
 		buffer_write(buff,buffer_s16,inst.x);
 		//y pos
 		buffer_write(buff,buffer_s16,inst.y);
-		//angle ***convert to radians to reduce file size ???***
-		buffer_write(buff,buffer_u16,round(inst.angle));
+		//angle
+		buffer_write(buff,buffer_u16,inst.angle);
 		//scale
 		buffer_write(buff,buffer_f32,inst.scale) 
 	}

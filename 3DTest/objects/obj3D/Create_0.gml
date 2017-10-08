@@ -17,5 +17,4 @@ trgRate = 4;
 trgMag = 5;
 trgY = 0;
 
-
 sep = 1

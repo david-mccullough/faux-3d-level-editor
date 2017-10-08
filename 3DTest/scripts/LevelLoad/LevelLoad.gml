@@ -39,16 +39,14 @@ if file_exists(filename)
 				inst.x = buffer_read(buff,buffer_s16);
 				//y pos
 				inst.y = buffer_read(buff,buffer_s16);
-				//angle ***convert back into degrees***
-				inst.angle = radtodeg(buffer_read(buff,buffer_u8));
+				//angle
+				inst.angle = buffer_read(buff,buffer_u16);
 				//scale
 				inst.scale = buffer_read(buff,buffer_f32)
-				buffer_seek(buff, buffer_seek_relative, 1);
 			}
 		
 			else
 			{
-				//cont = false;
 				show_message("ERROR: Couldn't find asset named " + asset)
 			}
 		}

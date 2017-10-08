@@ -1,5 +1,5 @@
 //determine if 2d or 3d
-
+image_angle = angle+objCameraManager.angle;
 //3d
 if is3D
 {

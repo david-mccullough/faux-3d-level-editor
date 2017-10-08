@@ -81,7 +81,7 @@ switch (state)
 				//delete it but copy its relevant data
 				angle = hit.angle;
 				editIdentity = hit.identity;
-				show_debug_message("selected identity: " + editIdentity)
+				show_debug_message("selected identity: " + editIdentity + " with angle " + string(angle))
 				editObject = asset_get_index("obj"+editIdentity)
 				editSprite= asset_get_index("spr"+editIdentity)
 				
