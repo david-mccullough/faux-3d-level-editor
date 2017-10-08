@@ -14,4 +14,4 @@ trgX += 10;
 trgMag *= .98;
 trgX %= 360;
 
-image_angle = angle+objCamera.angle;
+image_angle = angle+objCameraManager.angle;

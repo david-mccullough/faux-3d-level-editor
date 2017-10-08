@@ -7,6 +7,7 @@ if !global.levelEditorEnabled
 	{
 		instance_create_layer(objLevelEditor,x,y,"Control");
 	}
+	global.levelEditorEnabled = true;
 }
 /// Disable
 else
@@ -17,4 +18,5 @@ else
 	{
 		instance_deactivate_object(objLevelEditor)
 	}
+	global.levelEditorEnabled = false;
 }

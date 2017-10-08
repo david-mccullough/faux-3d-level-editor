@@ -6,7 +6,7 @@ event_inherited();
 trgX += trgRate;
 trgX %= 360;
 
-image_angle = angle+objCamera.angle;
+image_angle = angle+objCameraManager.angle;
 
 if keyboard_check_pressed(vk_up)
 {

@@ -1,0 +1,51 @@
+Converting GML script : ${project_dir}\scripts\draw_sprite_outlined\draw_sprite_outlined.gml
+Converted description : /// @description draw_sprite_outlined(sprite, subimg, x, y, xscale, yscale, ang, colour, outline_colour)/// @function draw_sprite_outlined
+/// @param sprite
+/// @param  subimg
+/// @param  x
+/// @param  y
+/// @param  xscale
+/// @param  yscale
+/// @param  ang
+/// @param  colour
+/// @param  outline_colour
+
+Converting GML script : ${project_dir}\scripts\draw_text_outlined\draw_text_outlined.gml
+Converted description : /// @description draw_text_outlined(x, y, string, colour, outline_colour)/// @function draw_text_outlined
+/// @param x
+/// @param  y
+/// @param  string
+/// @param  colour
+/// @param  outline_colour
+
+Converting GML script : ${project_dir}\scripts\draw_text_shadow_ext\draw_text_shadow_ext.gml
+Converted description : /// @description draw_text_shadow_ext(x, y, string, colour, shadow_colour, shadow_direction, shadow_distance, shadow_alpha)/// @function draw_text_shadow_ext
+/// @param x
+/// @param  y
+/// @param  string
+/// @param  colour
+/// @param  shadow_colour
+/// @param  shadow_direction
+/// @param  shadow_distance
+/// @param  shadow_alpha
+
+Converting GML script : ${project_dir}\scripts\draw_sprite_shadow\draw_sprite_shadow.gml
+Converted description : /// @description draw_sprite_shadow(direction, distance, scale, colour, alpha);/// @function draw_sprite_shadow
+/// @param direction
+/// @param  distance
+/// @param  scale
+/// @param  colour
+/// @param  alpha
+
+Converting GML script : ${project_dir}\scripts\draw_text_shadow\draw_text_shadow.gml
+Converted description : /// @description draw_text_shadow(x, y, string, colour, shadow_colour, shadow_alpha)/// @function draw_text_shadow
+/// @param x
+/// @param  y
+/// @param  string
+/// @param  colour
+/// @param  shadow_colour
+/// @param  shadow_alpha
+
+added compatibility script d3d/d3d_set_fog.gml
+added compatibility script d3d/__init_d3d.gml
+added compatibility script __init_global.gml

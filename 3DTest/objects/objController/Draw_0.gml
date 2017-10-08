@@ -10,7 +10,7 @@ if ds_exists(global.depthGrid, ds_type_grid)
 
 	// resize height to fit
 	var height = instance_number(objObject);
-	ds_grid_resize(global.depthGrid,2,height);
+	ds_grid_resize(global.depthGrid,2,height+1);
 	
 	var yy = 0;
 	with(objObject)

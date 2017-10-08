@@ -25,20 +25,17 @@ if mbmPressed
 {
     drag_x = mouse_x
     drag_y = mouse_y
-	camera_set_view_pos(global.camera,-1000,1000)
+	//camera_set_view_pos(objCameraManager.camera,-1000,1000)
 }
 if (mbmHeld)
 {
     // actual dragging logic:
-	var xpos = camera_get_view_x(global.camera)
-	var ypos = camera_get_view_y(global.camera)
-    xpos = drag_x - (mouse_x - xpos)
-    ypos = drag_y - (mouse_y - ypos)
+    view_x = drag_x - (mouse_x - view_x)
+    view_y = drag_y - (mouse_y - view_y)
     // make sure view doesn't go outside the room:
-    //view_xview = max(0, min(view_xview, room_width - view_wview))
-    //view_yview = max(0, min(view_yview, room_height - view_hview))
-	camera_set_view_pos(global.camera,xpos,ypos)
-	show_debug_message(xpos)
+    //view_x = max(0, min(view_x, room_width - view_w))
+    //view_y = max(0, min(view_y, room_height - view_h))
+	//camera_set_view_pos(objCameraManager.camera,xpos,ypos)
 }
 
 #endregion
@@ -113,6 +110,11 @@ switch (state)
 			var temp = instance_create_depth(mouse_x,mouse_y, 0, editObject);
 			temp.angle = angle;
 			
+			state = editorState.idle;
+		}
+		else if keyboard_check_pressed(vk_delete)
+		{
+			//since object is already technically deleted, just change state
 			state = editorState.idle;
 		}
 	
