@@ -6,6 +6,7 @@
 #macro C_FALSE make_colour_rgb(255, 50, 100)
 
 #macro F_DEBUG fntDebug
+#macro F_LE fntLevelEditor
 
 #endregion
 

@@ -33,8 +33,8 @@ if (mbmHeld)
     view_x = drag_x - (mouse_x - view_x)
     view_y = drag_y - (mouse_y - view_y)
     // make sure view doesn't go outside the room:
-    //view_x = max(0, min(view_x, room_width - view_w))
-    //view_y = max(0, min(view_y, room_height - view_h))
+    view_x = max(0, min(view_x, room_width - view_w))
+    view_y = max(0, min(view_y, room_height - view_h))
 	//camera_set_view_pos(objCameraManager.camera,xpos,ypos)
 }
 
@@ -62,7 +62,7 @@ switch (state)
 				}
 			}
 		
-		if (mblPressed) //left mb pressed...
+		if (mblPressed && objCursor.hit == noone) //left mb pressed...
 		{
 			// if we have a reference for a focused object...
 			if (hit != noone)
@@ -81,7 +81,7 @@ switch (state)
 		}
 		else //just hoverin'...
 		{
-			if (hit != noone)
+			if (hit != noone && objCursor.hit == noone)
 			{
 				hit.editState = editorState.focused;
 			}
@@ -128,7 +128,7 @@ switch (state)
 		{
 			state = editorState.idle;
 		}
-		if mblPressed && canPlace
+		if mblPressed && canPlace && objCursor.hit == noone
 		{
 			var temp = instance_create_depth(mouse_x,mouse_y, 0, editObject);
 			temp.angle = angle;

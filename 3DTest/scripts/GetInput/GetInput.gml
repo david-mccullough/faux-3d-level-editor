@@ -1,14 +1,14 @@
-/// @description Get Input
-
-/// Mouse
 mblPressed = mouse_check_button_pressed(mb_left);
-mbmPressed = mouse_check_button_pressed(mb_middle);
-mbrPressed = mouse_check_button_pressed(mb_right);
+mblHeld = mouse_check_button(mb_left);
 mblReleased = mouse_check_button_released(mb_left);
-mbmReleased = mouse_check_button_released(mb_middle);
+
+mbrPressed = mouse_check_button_pressed(mb_right);
+mbrHeld = mouse_check_button(mb_right);
 mbrReleased = mouse_check_button_released(mb_right);
 
+mbmPressed = mouse_check_button_pressed(mb_middle);
 mbmHeld = mouse_check_button(mb_middle)
+mbmReleased = mouse_check_button_released(mb_middle);
 
 mwUp = mouse_wheel_up()
 mwDown = mouse_wheel_down()

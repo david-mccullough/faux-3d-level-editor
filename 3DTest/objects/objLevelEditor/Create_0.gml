@@ -11,8 +11,6 @@ enum editorState
 	selected,
 }
 
-
-
 state = editorState.idle;
 
 global.buff = buffer_create(4000, buffer_fixed, 1);
@@ -34,6 +32,13 @@ drag_y = 0;
 
 
 ds_list_add(global.levels, "testLevel");
+
+
+#region //init object list
+
+instance_create_depth(view_w-128,view_h/2,100,guiLEObject)
+
+#endregion
 
 
 

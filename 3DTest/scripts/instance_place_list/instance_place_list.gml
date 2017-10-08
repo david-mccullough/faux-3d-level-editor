@@ -7,7 +7,6 @@
 //      x,y         placement of current instance, real
 //      obj         object to check for collision (or all), real
 //
-/// GMLscripts.com/license
 /// @param x
 /// @param y
 /// @param object

@@ -1,0 +1,2 @@
+/// @description Get Input
+GetInput();

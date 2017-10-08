@@ -6,7 +6,10 @@ camera_initilized = false;
 
 camera = camera_create();// _view(0,0,objDisplayManager.ideal_width,objDisplayManager.ideal_height,0,noone,0,0,0,0);
 
-globalvar view_x,view_y,view_w,view_h;
+globalvar view_x;
+globalvar view_y;
+globalvar view_w;
+globalvar view_h;
 
 view_x = 0;
 view_y = 0;
