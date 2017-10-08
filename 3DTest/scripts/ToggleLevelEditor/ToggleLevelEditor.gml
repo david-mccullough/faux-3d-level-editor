@@ -5,7 +5,7 @@ if !global.levelEditorEnabled
 	instance_activate_object(objLevelEditor)
 	if !instance_exists(objLevelEditor)
 	{
-		instance_create_layer(objLevelEditor,x,y,"Control");
+		instance_create_layer(x,y,"Control",objLevelEditor);
 	}
 	global.levelEditorEnabled = true;
 }

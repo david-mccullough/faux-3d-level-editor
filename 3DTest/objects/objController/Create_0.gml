@@ -60,7 +60,7 @@ if !file_exists("readme.txt")
 }
 
 #macro DIR_STORAGE filename_path("readme.txt")
-show_message_async(DIR_STORAGE)
+show_debug_message("STORAGE DIRECTORY: " + DIR_STORAGE)
 
 #endregion
 

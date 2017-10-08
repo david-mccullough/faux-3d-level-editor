@@ -8,3 +8,4 @@ enum mouseState
 }
 
 state = mouseState.idle;
+hit = noone;

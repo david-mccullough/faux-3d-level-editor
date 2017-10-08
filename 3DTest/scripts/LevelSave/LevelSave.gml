@@ -1,4 +1,4 @@
-var buff = buffer_create(4000, buffer_fixed, 1);
+var buff = buffer_create(1, buffer_grow, 1);
 buffer_seek(buff,buffer_seek_start,0)
 
 //get list of all objObjects
@@ -17,26 +17,28 @@ repeat(size)
 	/// Cache current instance
 	var inst = ds_list_find_value(list,i);
 	
-	/// Write necessary data to buffer 
+	/// Write necessary data to buffer
+	/// grows in multiples of (28)!!!
 	if instance_exists(inst)
 	{
+		show_debug_message(buffer_tell(buff))
 		//object_index
-		buffer_write(buff,buffer_u16,inst.object_index);
+		buffer_write(buff,buffer_string,object_get_name(inst.object_index));
 		//object identity
 		buffer_write(buff,buffer_string,inst.identity);
 		//x pos
 		buffer_write(buff,buffer_s16,inst.x);
 		//y pos
 		buffer_write(buff,buffer_s16,inst.y);
-		//angle ***converted to radians to reduce file size***
-		buffer_write(buff,buffer_u8,degtorad(inst.angle));
+		//angle ***convert to radians to reduce file size ???***
+		buffer_write(buff,buffer_u16,round(inst.angle));
 		//scale
-		//buffer_write(buff,buffer_f32,inst.scale) 
-	
+		buffer_write(buff,buffer_f32,inst.scale) 
 	}
 	
 	i++;
 }
+
 
 //save buffer to memory
 
@@ -54,6 +56,11 @@ if (file_exists(DIR_LEVELS + filename))
 	{
 		//do nothing
 	}
+}
+else
+{
+	buffer_save(buff, DIR_LEVELS + filename)
+	show_message_async(filename + " successfully saved to directory:\n" + DIR_STORAGE + DIR_LEVELS)
 }
 
 buffer_delete(buff)
