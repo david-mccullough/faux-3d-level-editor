@@ -3,8 +3,8 @@ editState = editorState.idle;
 drawColor = c_white;
 //get identity from object name
 //is this how it should work? maybe just use macros
-identity = string_delete(object_get_name(object_index),1,3);
-//show_debug_message(identity)
+//string_delete(object_get_name(object_index),1,3);
+identity = O_DCRATE
 
 //required for depth system
 is3D = false;

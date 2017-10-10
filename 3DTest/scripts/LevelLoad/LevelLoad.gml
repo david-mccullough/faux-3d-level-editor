@@ -1,6 +1,6 @@
 ///@param wipeContents
 
-var filename = DIR_LEVELS + room_get_name(room)+"_data.sav";
+var filename = DIR_LEVELDATA + room_get_name(room)+"_data.sav";
 
 if file_exists(filename)
 {
@@ -31,23 +31,26 @@ if file_exists(filename)
 			var obj = asset_get_index(asset)
 			if obj != -1
 			{
-				var inst = instance_create_depth(0,0,0,obj);
 				/// Assign its data
 				//identity
-				inst.identity = buffer_read(buff,buffer_string);
+				var identity = buffer_read(buff,buffer_string);
 				//x pos
-				inst.x = buffer_read(buff,buffer_s16);
+				var xx = buffer_read(buff,buffer_s16);
 				//y pos
-				inst.y = buffer_read(buff,buffer_s16);
+				var yy = buffer_read(buff,buffer_s16);
 				//angle
-				inst.angle = buffer_read(buff,buffer_u16);
+				var angle = buffer_read(buff,buffer_u16);
 				//scale
-				inst.scale = buffer_read(buff,buffer_f32)
+				var scale = buffer_read(buff,buffer_f32)
+				
+				var inst = ObjectCreate(xx,yy,identity,angle);
+				inst.scale = scale;
+				
 			}
 		
 			else
 			{
-				show_message("ERROR: Couldn't find asset named " + asset)
+				show_debug_message("ERROR: Couldn't find asset named " + asset)
 			}
 		}
 	} 

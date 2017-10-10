@@ -16,24 +16,38 @@ draw_set_font(F_DEBUG)
 	
 	#region //3D
 	//D denotes 3D
+	//DS_MAP of identity : object_index
+	global.objectMap = ds_map_create();
+	
 	#macro O_DCRATE		"3dCrate"
+	ds_map_add(global.objectMap, O_DCRATE, obj3D);
 	#macro O_DGRASS		"3dGrass"
+	ds_map_add(global.objectMap, O_DGRASS, obj3D);
 	#macro O_DTREE		"3dTree"
+	ds_map_add(global.objectMap, O_DTREE, obj3D);
+	#macro O_DBUCKET	"3dBucket"
+	ds_map_add(global.objectMap, O_DBUCKET, obj3D);
+	#macro O_DBARREL1	"3dWoodenBarrel"
+	ds_map_add(global.objectMap, O_DBARREL1, obj3D);
 	
 	#endregion
 	
 	#region //2D
 	
 	#macro O_PUDDLE		"Puddle"
+	ds_map_add(global.objectMap, O_DBARREL1, obj2D);
 	
 	#endregion
-	
+		
 #endregion
+
 
 #region // Level Editor
 
+#macro LOAD_INCLUDED_LEVELDATA false //do NOT touch this -david
+
 global.levelEditorEnabled = false;
-ToggleLevelEditor();
+ToggleLevelEditor(); // toggle levelEditor on
 
 #endregion
 
@@ -50,19 +64,37 @@ if !ds_exists(global.depthGrid, ds_type_grid)
 
 #region // File Directory
 
-#macro DIR_LEVELS "Levels\\"
-directory_create("Levels\\")
-if !file_exists("readme.txt")
+#macro DIR_LEVELDATA "LevelData\\"
+directory_create("LevelData\\")
+if !file_exists("ignore.txt")
 {
-	var readme = file_text_open_write("readme.txt");
+	var readme = file_text_open_write("ignore.txt");
 	file_text_write_string(readme,"hi");
 	file_text_close(readme);
 }
 
-#macro DIR_STORAGE filename_path("readme.txt")
+#macro DIR_STORAGE filename_path("ignore.txt")
 show_debug_message("STORAGE DIRECTORY: " + DIR_STORAGE)
 
 #endregion
 
+if global.levelEditorEnabled && LOAD_INCLUDED_LEVELDATA
+{
+	if show_question("Do you want to load locally saved level data?" +
+	"\n\nWARNING: Selecting No will load level data from included files and will overwrite level data with with files from last time zipLevelData.bat was run.")
+	{
+		// do nothing
+	}
+	else
+	{
+		zip_unzip("levelData.zip",DIR_LEVELDATA)
+	}
+}
+else if LOAD_INCLUDED_LEVELDATA
+{
+	zip_unzip("levelData.zip",DIR_LEVELDATA)
+}
 
+//zip_unzip("BeeChillLogo.zip",DIR_STORAGE)
+//global.logo = sprite_add(DIR_STORAGE + "BeeChillLogo.gif",1,false,false,0,0);
 

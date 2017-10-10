@@ -23,7 +23,7 @@ if ds_exists(global.depthGrid, ds_type_grid)
 		//ground items
 		if !sortDepth
 		{
-			DrawObject();
+			ObjectDraw();
 		}
 	}
 	
@@ -42,7 +42,7 @@ if ds_exists(global.depthGrid, ds_type_grid)
 			if sortDepth
 			{
 				myDepth = yy;
-				DrawObject();
+				ObjectDraw();
 			}
 
 		}

@@ -6,8 +6,8 @@ if instance_exists(objLevelEditor)
 	with objLevelEditor
 	{
 		show_debug_message("selected identity: " + editIdentity)
-		editObject = asset_get_index("obj"+editIdentity)
-		editSprite= asset_get_index("spr"+editIdentity)
+		editObject = IdentityGetObject(editIdentity)
+		editSprite= IdentityGetSprite(editIdentity)
 		state = editorState.paint;
 	}
 }

@@ -44,13 +44,13 @@ repeat(size)
 
 //check if file already exists
 var filename = room_get_name(room)+"_data.sav";
-if (file_exists(DIR_LEVELS + filename))
+if (file_exists(DIR_LEVELDATA + filename))
 {
 	var overwrite = show_question(filename + " already exists, dingus. Do you want to overwrite it?")
 	if overwrite
 	{
-		buffer_save(buff, DIR_LEVELS + filename)
-		show_message_async(filename + " successfully saved to directory:\n" + DIR_STORAGE + DIR_LEVELS)
+		buffer_save(buff, DIR_LEVELDATA + filename)
+		show_message_async(filename + " successfully saved to directory:\n" + DIR_STORAGE + DIR_LEVELDATA)
 	}
 	else
 	{
@@ -59,8 +59,8 @@ if (file_exists(DIR_LEVELS + filename))
 }
 else
 {
-	buffer_save(buff, DIR_LEVELS + filename)
-	show_message_async(filename + " successfully saved to directory:\n" + DIR_STORAGE + DIR_LEVELS)
+	buffer_save(buff, DIR_LEVELDATA + filename)
+	show_message_async(filename + " successfully saved to directory:\n" + DIR_STORAGE + DIR_LEVELDATA)
 }
 
 buffer_delete(buff)

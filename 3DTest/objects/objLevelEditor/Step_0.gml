@@ -82,8 +82,8 @@ switch (state)
 				angle = hit.angle;
 				editIdentity = hit.identity;
 				show_debug_message("selected identity: " + editIdentity + " with angle " + string(angle))
-				editObject = asset_get_index("obj"+editIdentity)
-				editSprite= asset_get_index("spr"+editIdentity)
+				editObject = IdentityGetObject(editIdentity)
+				editSprite= IdentityGetSprite(editIdentity)
 				
 				instance_destroy(hit);
 								
@@ -118,8 +118,7 @@ switch (state)
 		if mblReleased
 		{
 			//create copy of instance
-			var temp = instance_create_depth(mouse_x,mouse_y, 0, editObject);
-			temp.angle = angle;
+			ObjectCreate(mouse_x,mouse_y, editIdentity, angle);
 			
 			state = editorState.idle;
 		}
@@ -141,8 +140,7 @@ switch (state)
 		}
 		if mblPressed && canPlace && objCursor.hit == noone
 		{
-			var temp = instance_create_depth(mouse_x,mouse_y, 0, editObject);
-			temp.angle = angle;
+			ObjectCreate(mouse_x,mouse_y, editIdentity, angle);
 		}
 	
 	break;
