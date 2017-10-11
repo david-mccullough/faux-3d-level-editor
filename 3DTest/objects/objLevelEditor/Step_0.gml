@@ -13,7 +13,10 @@ if controlHeld && keyboard_check_pressed(ord("S"))
 if state != editorState.idle
 {
 	//update canPlace
-	canPlace = CheckCanPlace(x,y,editObject);
+	canPlace = ObjectCanPlace(x,y,editObject);
+	if canPlace then editColor = C_TRUE
+	else editColor = C_FALSE
+
 	
 	// Adjust angle //
 	var mult = 1;
