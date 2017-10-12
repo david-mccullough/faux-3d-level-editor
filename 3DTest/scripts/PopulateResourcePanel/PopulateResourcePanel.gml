@@ -62,7 +62,6 @@ repeat(numResources)
 		var panel = gui_create(0,0,dd,guiPanel,myGUI);
 		panel.name = string(panelCount);
 		PanelGroupAttach(panel,panelGroup);
-		show_debug_message("Attaching panel, " + panel.name + ", to " + panelGroup.name)
 		PanelAttach(panel,panelGroup.myPanel,0,16,true);
 		panelCount++;
 		n = 0; //reset button count

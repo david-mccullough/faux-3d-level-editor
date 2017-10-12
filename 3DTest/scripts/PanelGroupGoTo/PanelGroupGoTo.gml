@@ -17,11 +17,13 @@ with pg
 	/// Deactivate current panel
 	if currentPanel != noone
 	{
-	for(var i=0;i<array_length_1d(currentPanel.elements);i++)
-	{
-		if instance_exists(currentPanel.elements[i])
-		instance_deactivate_object(currentPanel.elements[i]);
-	}
+		for(var i=0;i<array_length_1d(currentPanel.elements);i++)
+		{
+			if instance_exists(currentPanel.elements[i])
+			instance_deactivate_object(currentPanel.elements[i]);
+		}
+		
+		/// TODO GO DEEPER
 	}
 	
 	//make sure in bounds

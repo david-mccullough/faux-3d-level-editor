@@ -40,6 +40,7 @@ draw_set_font(F_DEBUG)
 	#endregion
 	
 	#region //2D
+	global.d2dObjects = ds_list_create();
 	
 	#macro O_PUDDLE		"Puddle"
 	ds_map_add(global.objectMap, O_DBARREL1, obj2D);

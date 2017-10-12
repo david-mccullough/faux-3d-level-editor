@@ -67,12 +67,12 @@ while t<4
 	arr[t].myPanelGroup = resourcePG;
 	arr[t].index = t;
 	PanelAttach(arr[t],editPanel,16 + 32*t,32,true);
+	
 	t++
 }
 
 
-
-///d3d panel
+///-------------------d3d panel
 d3dPanel = gui_create(0,0,dd,guiPanel,myGUI);
 d3dPanel.name = "3D Objects"
 PanelGroupAttach(d3dPanel, resourcePG);
@@ -86,6 +86,20 @@ d3dPG.name= "3D Object Pages"
 /// Create panels for however pages are necessary to fit all resources of d3d type
 PopulateResourcePanel(global.d3dObjects,d3dPG,2,16);
 PanelGroupReset(d3dPG,0);
+
+///-------------------d2d panel
+d2dPanel = gui_create(0,0,dd,guiPanel,myGUI);
+d2dPanel.name = "2D Objects"
+PanelGroupAttach(d2dPanel, resourcePG);
+PanelAttach(d2dPanel,editPanel,0,64,true);
+
+//d2d panelgroup (container for panels with object lists)
+d2dPG = gui_create(0,0,dd,guiPanelGroup,myGUI);
+PanelAttach(d2dPG, d2dPanel, 0,0,true);
+d2dPG.name= "2D Object Pages"
+
+PopulateResourcePanel(global.d2dObjects,d2dPG,2,16);
+PanelGroupReset(d2dPG,0);
 
 #endregion
 
