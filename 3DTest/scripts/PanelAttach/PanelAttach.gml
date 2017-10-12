@@ -22,14 +22,8 @@ if relPos
 }
 
 //add object to panel
-if panel.elements[0] == 0
-{
-	panel.elements[0] = o;
-}
-else
-{
-	panel.elements[array_length_1d(panel.elements)] = o;
-}
+panel.elements[array_length_1d(panel.elements)] = o;
+
 
 
 //additional panels

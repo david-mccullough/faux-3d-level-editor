@@ -13,8 +13,9 @@ uiPanelSprite = -1;
 uiImageIndex=0;
 uiImageScale = 1.0;
 
-elements[0] = 0; //array that will hold panel children
+elements = array_create(0,0) //will be array of childed gui elements
 //page.elements[array_length_1d(page.elements)-1] = obj;
 
 myPanelGroup = noone;
 panelIndex = 0;
+myPanel = noone;
