@@ -8,12 +8,11 @@ if controlHeld && keyboard_check_pressed(ord("S"))
 	LevelSave();
 }
 
-
 #region //angle and canPlace
 if state != editorState.idle
 {
 	//update canPlace
-	canPlace = ObjectCanPlace(x,y,editObject);
+	//canPlace = ObjectCanPlace(x,y,editObject);
 	if canPlace then editColor = C_TRUE
 	else editColor = C_FALSE
 
@@ -31,7 +30,10 @@ if state != editorState.idle
 	angle = floor(angle/30)*30
 	}
 }
+
 #endregion
+
+
 
 #region//Pan view
 
@@ -76,7 +78,19 @@ switch (state)
 				}
 			}
 		
-		if (mblPressed && objCursor.hit == noone) //left mb pressed...
+		//"color" picking functionality
+		if mbmPressed or (altHeld and mblPressed)
+		{
+			if (hit != noone)
+			{
+				editIdentity = hit.identity;
+				show_debug_message("selected identity: " + editIdentity)
+				editSprite= IdentityGetSprite(editIdentity)
+								
+				state = editorState.paint;
+			} 
+		}
+		else if (mblPressed && objCursor.hit == noone) //left mb pressed...
 		{
 			// if we have a reference for a focused object...
 			if (hit != noone)
@@ -93,6 +107,8 @@ switch (state)
 				state = editorState.inst;
 			}
 		}
+
+		
 		else //just hoverin'...
 		{
 			if (hit != noone && objCursor.hit == noone)
@@ -106,7 +122,7 @@ switch (state)
 			
 		}
 
-		if paintKeyPressed
+		if mbrPressed
 		{
 			state = editorState.paint;
 		}
@@ -137,7 +153,7 @@ switch (state)
 	case editorState.paint:
 	#region //paint state
 	
-		if paintKeyPressed
+		if mbrPressed
 		{
 			state = editorState.idle;
 		}

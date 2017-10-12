@@ -11,15 +11,18 @@ var i = array_length_1d(pg.myPanels);
 
 //check for custom index placement
 if argument_count>2 then i = argument[2]
-else if i == 1 and pg.myPanels[0].name == "default" //this is to overwrite default value
+
+/*if pg.myPanels= 0
 {
 	i = 0
-}
+	pg.myPanels[0] = p;
+}*/
 
 //add panel to panelGroup
 pg.myPanels[i] = p;
 	
 p.myPanelGroup = pg;
 p.panelIndex = i;
+pg.numPanels ++;
 
 return i;

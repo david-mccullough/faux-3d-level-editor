@@ -39,11 +39,27 @@
             }
         },
         {
+            "Key": "04c30d22-a056-4a32-a7ed-e67a95950306",
+            "Value": {
+                "id": "a011c834-1c88-48f4-a881-806ee3f5e93b",
+                "resourcePath": "objects\\guiSectionButton\\guiSectionButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "07a9acc8-ef12-44d3-a811-ef80144d3ffa",
             "Value": {
                 "id": "7b99092d-0efe-4da5-bf2e-d8441a207273",
                 "resourcePath": "views\\07a9acc8-ef12-44d3-a811-ef80144d3ffa.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0965c868-cb29-4d33-b923-e934987751d2",
+            "Value": {
+                "id": "d8cb9dfd-f948-438e-b108-31e7c1be4ab5",
+                "resourcePath": "sprites\\sprSectionButton\\sprSectionButton.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -524,6 +540,14 @@
                 "id": "cbf9795d-5da6-4a3d-b0b9-d4a6a5082753",
                 "resourcePath": "views\\724de76f-83be-4f93-939f-c31635b8b112.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "73989fa3-898e-47b0-9828-1d68e15a7216",
+            "Value": {
+                "id": "75e9c09c-ba89-4153-90a1-8560db3c2218",
+                "resourcePath": "objects\\guiText\\guiText.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1020,6 +1044,14 @@
                 "id": "a7e62a6a-1890-4e55-a65a-8e4e428c5641",
                 "resourcePath": "views\\bd6f5856-0af9-447d-9180-2e04f9fd2f31.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c0139f31-6ffc-4052-acde-77c030062023",
+            "Value": {
+                "id": "2d147720-5e23-49d8-8b16-351a23bd7391",
+                "resourcePath": "scripts\\PanelGroupReset\\PanelGroupReset.yy",
+                "resourceType": "GMScript"
             }
         },
         {

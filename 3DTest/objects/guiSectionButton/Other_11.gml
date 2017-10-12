@@ -1,3 +1,3 @@
 /// @description released behavior
-PanelGroupGoTo(myPanelGroup, myPanelGroup.panelIndex + dir);
+PanelGroupGoTo(myPanelGroup, index);
 state = buttonState.idle

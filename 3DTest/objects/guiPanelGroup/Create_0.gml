@@ -1,7 +1,6 @@
 name = "panelGroup"
-myPanels[0] = instance_create_depth(0,0,0,guiPanel)
-myPanels[0].name = 0
+myPanels = array_create(0,0) //will be array
 panelIndex = 0;
-currentPanel = myPanels[panelIndex];
-
+currentPanel = noone//myPanels[panelIndex];
+numPanels = 0;
 myPanel = noone;

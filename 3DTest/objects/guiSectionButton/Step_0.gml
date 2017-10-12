@@ -1,7 +1,6 @@
 /// @description state
 //if last or first panels, set appropiate buttons to disabled
-if (sign(dir) == 1 and myPanelGroup.panelIndex == myPanelGroup.numPanels-1)
-or (sign(dir) == -1 and myPanelGroup.panelIndex == 0)
+if index == myPanelGroup.panelIndex
 {
 	state = buttonState.disabled
 }
@@ -11,7 +10,7 @@ y = (guiy+view_y)
 switch state
 {
 	case buttonState.idle:
-		var_saturation = 0.0;
+		var_saturation = -0.1;
 		
 		if mouseOver {state = buttonState.hover}
 	
@@ -26,7 +25,7 @@ switch state
 		break;
 	
 	case buttonState.pressed:
-	    var_saturation = -0.2;
+	    var_saturation = -0.3;
 		event_user(0);
 	
 		break;
@@ -37,10 +36,9 @@ switch state
 		break;
 	
 	case buttonState.disabled:
-		var_saturation = satDisabled;
+		var_saturation = 0.3;
 		
-		if !(sign(dir) == 1 and myPanelGroup.panelIndex == myPanelGroup.numPanels-1)
-		and !(sign(dir) == -1 and myPanelGroup.panelIndex == 0)
+		if index != myPanelGroup.panelIndex
 		{
 			state = buttonState.idle
 		}

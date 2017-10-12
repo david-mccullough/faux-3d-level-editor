@@ -8,3 +8,4 @@ if uiDrawRectangle
 	
 	draw_rectangle(guix,guiy,guix+uiWidth,guiy+uiHeight,false)
 }
+draw_set_alpha(1)

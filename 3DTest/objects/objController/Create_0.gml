@@ -53,7 +53,7 @@ global.numObjects = ds_map_size(global.objectMap)
 
 #region // Level Editor
 
-#macro LOAD_INCLUDED_LEVELDATA false //do NOT touch this -david
+#macro LOAD_INCLUDED_LEVELDATA false //do NOT touch this -david (keep to false)
 
 global.levelEditorEnabled = false;
 ToggleLevelEditor(); // toggle levelEditor on

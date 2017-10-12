@@ -8,7 +8,7 @@ if isSat
 	draw_set_font(F_LE)
 	draw_set_color(C_LETEXT);
 	draw_set_valign(fa_middle)
-	draw_text(guix-sprite_xoffset+16,guiy,text)
+	draw_text(guix-sprite_xoffset+16,guiy,identity)
 	draw_set_valign(fa_top)
 		
 	shader_reset();
