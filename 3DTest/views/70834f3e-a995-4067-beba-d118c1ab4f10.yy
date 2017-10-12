@@ -9,7 +9,8 @@
         "02e5a778-444c-43fc-a637-55bf461bd0ee",
         "d1f0edf2-d5cf-4eed-9c7f-99978c508f6a",
         "21b7157b-9106-435a-9ee5-58ec9798b4b8",
-        "bd4903cc-e433-43db-b363-c19b85fe6dc5"
+        "bd4903cc-e433-43db-b363-c19b85fe6dc5",
+        "33a5c7d1-3c1e-4282-babf-0657503b5d50"
     ],
     "filterType": "GMScript",
     "folderName": "Level Editor",

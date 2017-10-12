@@ -1,8 +1,8 @@
 {
-    "id": "872e7b9d-1430-48cf-b4b5-88a01b032f0f",
+    "id": "cf7148ab-a241-43d1-b7ee-35600bfc87f4",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "PageGoTo1",
+    "name": "PanelGroupAttach",
     "IsCompatibility": false,
     "IsDnD": false
 }

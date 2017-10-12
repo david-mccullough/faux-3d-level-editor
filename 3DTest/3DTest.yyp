@@ -39,14 +39,6 @@
             }
         },
         {
-            "Key": "0610f68c-1da3-46bd-843b-f5a1efd452de",
-            "Value": {
-                "id": "d79393d8-f849-4a18-89b0-36e0d85acdb0",
-                "resourcePath": "scripts\\WindowAttach\\WindowAttach.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "07a9acc8-ef12-44d3-a811-ef80144d3ffa",
             "Value": {
                 "id": "7b99092d-0efe-4da5-bf2e-d8441a207273",
@@ -195,6 +187,14 @@
             "Value": {
                 "id": "977013c9-bc82-4692-a944-3374935322f1",
                 "resourcePath": "scripts\\approach\\approach.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "33a5c7d1-3c1e-4282-babf-0657503b5d50",
+            "Value": {
+                "id": "47ab8356-e571-4551-889c-bef32ca0a380",
+                "resourcePath": "scripts\\ObjectCanPlace\\ObjectCanPlace.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -367,6 +367,22 @@
             }
         },
         {
+            "Key": "57164569-f055-41a5-a631-c3cc0ce979b4",
+            "Value": {
+                "id": "08c31b38-1907-49d3-85c8-862756b3bd12",
+                "resourcePath": "sprites\\sprArrowButton\\sprArrowButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5851a50a-69aa-4d48-8b08-fdf7f8b7347e",
+            "Value": {
+                "id": "f3353d7b-a44f-46e8-ae20-cd86d54a6dce",
+                "resourcePath": "objects\\objGUILayer\\objGUILayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5879a9f7-f8fe-466c-a779-90069e11fbaa",
             "Value": {
                 "id": "b877be93-6518-4e8c-a36f-e07dceae8b27",
@@ -394,7 +410,7 @@
             "Key": "5accd837-5884-4c52-8082-0b9c171b51ba",
             "Value": {
                 "id": "09dba0a2-2997-4dd8-930f-1feace9b8a95",
-                "resourcePath": "scripts\\PageGoTo\\PageGoTo.yy",
+                "resourcePath": "scripts\\PanelGroupGoTo\\PanelGroupGoTo.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -567,14 +583,6 @@
             }
         },
         {
-            "Key": "7d782fa9-0f9b-406d-a538-1620293b4d1c",
-            "Value": {
-                "id": "8c73f656-de53-4840-b8d6-1ff6039520ae",
-                "resourcePath": "objects\\guiManager\\guiManager.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7db6d950-6873-4a14-bcd9-1a81c8504186",
             "Value": {
                 "id": "76262d6d-ca4b-4c0c-966f-bdf8ec4fa70e",
@@ -610,16 +618,8 @@
             "Key": "85660f15-4d7e-4b43-a4e6-8072d4e9f12c",
             "Value": {
                 "id": "01157143-6fcb-4606-8646-9e3b8920a894",
-                "resourcePath": "sprites\\spr3dBarrel\\spr3dBarrel.yy",
+                "resourcePath": "sprites\\spr3dWoodenBarrel\\spr3dWoodenBarrel.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "872e7b9d-1430-48cf-b4b5-88a01b032f0f",
-            "Value": {
-                "id": "361269e9-ebb7-4c15-921b-deb08c7a1d21",
-                "resourcePath": "scripts\\PageGoTo1\\PageGoTo1.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -652,6 +652,14 @@
                 "id": "938d62a3-f935-4d45-a87c-29c2dd2f591a",
                 "resourcePath": "views\\8a390273-dfc0-44eb-b7ae-b42cd2b8aa7d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8b13bbed-2877-45b5-bf44-b5d46b226acd",
+            "Value": {
+                "id": "6951ac43-d1d9-45e7-9f8b-9dd2fa24f301",
+                "resourcePath": "objects\\guiPanel\\guiPanel.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -731,6 +739,14 @@
             "Value": {
                 "id": "947e724d-5c01-49d4-bb18-5e3ef53df3e1",
                 "resourcePath": "scripts\\draw_3d\\draw_3d.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "99a16c87-19f5-4450-b9bb-d6de8a5009d4",
+            "Value": {
+                "id": "3c599b4a-97ea-487e-b943-2788d2a25195",
+                "resourcePath": "scripts\\gui_create\\gui_create.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -895,14 +911,6 @@
             }
         },
         {
-            "Key": "b0eb78ec-7c2c-4ea0-b8b9-514a2f9ddfc5",
-            "Value": {
-                "id": "d592620d-d9a1-4cef-8193-5873822ef774",
-                "resourcePath": "scripts\\CheckCanPlace\\CheckCanPlace.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "b2c35767-29f4-4f9f-b055-4a74503219fc",
             "Value": {
                 "id": "19f02c1c-f606-437d-9236-e9af18cce4c9",
@@ -948,6 +956,14 @@
                 "id": "6e7e4dd1-5939-4ea6-b805-e0c7003da917",
                 "resourcePath": "views\\b899d4a5-8dd9-48aa-96ce-3a4e34beb787.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bb64114e-da5e-4481-8ccc-0bfc5fa34400",
+            "Value": {
+                "id": "979ba98b-c038-4170-81a7-454cfb17e09f",
+                "resourcePath": "scripts\\PopulateResourcePanel\\PopulateResourcePanel.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1063,6 +1079,14 @@
             }
         },
         {
+            "Key": "cf7148ab-a241-43d1-b7ee-35600bfc87f4",
+            "Value": {
+                "id": "bea305ae-454e-4e0b-9068-053e28cede86",
+                "resourcePath": "scripts\\PanelGroupAttach\\PanelGroupAttach.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cf8bbe4b-6db9-41cd-8aeb-de60ddb0c7cb",
             "Value": {
                 "id": "c1af1784-1d78-4099-8ed2-52e48087ca0e",
@@ -1135,6 +1159,22 @@
             }
         },
         {
+            "Key": "d83eeed0-3619-4888-87ca-52e765dc1896",
+            "Value": {
+                "id": "72129937-38b5-4144-835a-23ae4b44b2e4",
+                "resourcePath": "objects\\objArrowButton\\objArrowButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d9681fe8-d86e-4af1-9869-e5dc07e1c4ac",
+            "Value": {
+                "id": "bcaf50d8-d4f7-4857-b044-83a4e88cc486",
+                "resourcePath": "scripts\\ds_map_num_value\\ds_map_num_value.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e3b852ea-7cb8-459b-ac35-9ed2a531e92c",
             "Value": {
                 "id": "2279e035-0a3f-4f4b-b6c1-fb62e47d11f6",
@@ -1171,6 +1211,14 @@
             "Value": {
                 "id": "c213952f-8e6d-418e-be8b-32d4aa26008c",
                 "resourcePath": "scripts\\view_center\\view_center.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f05294ea-d5e6-40e6-b163-ec2cef2c30cd",
+            "Value": {
+                "id": "9f546f2b-3d9b-4147-8eb7-9596d590f5fb",
+                "resourcePath": "scripts\\PanelAttach\\PanelAttach.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1237,6 +1285,14 @@
                 "resourcePath": "objects\\guiBlocker\\guiBlocker.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "ff77c4b9-a5be-4a7c-a800-a0b0c10815b3",
+            "Value": {
+                "id": "2f2c5b70-cc25-49e1-aa00-7b831c64b3b2",
+                "resourcePath": "objects\\guiPanelGroup\\guiPanelGroup.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
@@ -1281,7 +1337,6 @@
         "9c2eda38-a885-4004-893e-c83bd2de5825",
         "3fabe446-55a5-4b87-bacc-9d017345fb45",
         "9916d8b4-abe8-45b4-b15f-13f494a62e17",
-        "b0eb78ec-7c2c-4ea0-b8b9-514a2f9ddfc5",
         "a4d1103e-ce31-42f4-a321-02a2d0ca1326",
         "ad20b03a-a603-4186-b01c-753d6c689c03",
         "21ed0320-ce3a-4f0e-bc15-00a3a2e4e45f",
@@ -1302,9 +1357,13 @@
         "d1f0edf2-d5cf-4eed-9c7f-99978c508f6a",
         "21b7157b-9106-435a-9ee5-58ec9798b4b8",
         "bd4903cc-e433-43db-b363-c19b85fe6dc5",
-        "0610f68c-1da3-46bd-843b-f5a1efd452de",
+        "33a5c7d1-3c1e-4282-babf-0657503b5d50",
         "5accd837-5884-4c52-8082-0b9c171b51ba",
-        "872e7b9d-1430-48cf-b4b5-88a01b032f0f"
+        "f05294ea-d5e6-40e6-b163-ec2cef2c30cd",
+        "cf7148ab-a241-43d1-b7ee-35600bfc87f4",
+        "99a16c87-19f5-4450-b9bb-d6de8a5009d4",
+        "d9681fe8-d86e-4af1-9869-e5dc07e1c4ac",
+        "bb64114e-da5e-4481-8ccc-0bfc5fa34400"
     ],
     "tutorial": ""
 }

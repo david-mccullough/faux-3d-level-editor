@@ -1,8 +1,8 @@
 {
-    "id": "0610f68c-1da3-46bd-843b-f5a1efd452de",
+    "id": "5accd837-5884-4c52-8082-0b9c171b51ba",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "WindowAttach",
+    "name": "PanelGroupGoTo",
     "IsCompatibility": false,
     "IsDnD": false
 }

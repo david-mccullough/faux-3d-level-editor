@@ -1,8 +1,8 @@
 {
-    "id": "33a5c7d1-3c1e-4282-babf-0657503b5d50",
+    "id": "bb64114e-da5e-4481-8ccc-0bfc5fa34400",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "ObjectCanPlace",
+    "name": "PopulateResourcePanel",
     "IsCompatibility": false,
     "IsDnD": false
 }

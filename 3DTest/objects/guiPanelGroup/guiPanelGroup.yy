@@ -1,18 +1,28 @@
 {
-    "id": "7d782fa9-0f9b-406d-a538-1620293b4d1c",
+    "id": "ff77c4b9-a5be-4a7c-a800-a0b0c10815b3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "guiManager",
+    "name": "guiPanelGroup",
     "eventList": [
         {
-            "id": "44de241e-a842-41f7-8488-8355915b5c67",
+            "id": "f207623c-0d1e-48fc-aeb1-41a2d841ec2b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "7d782fa9-0f9b-406d-a538-1620293b4d1c"
+            "m_owner": "ff77c4b9-a5be-4a7c-a800-a0b0c10815b3"
+        },
+        {
+            "id": "6ccc3354-865f-47d7-92cb-844713af394c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "ff77c4b9-a5be-4a7c-a800-a0b0c10815b3"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

@@ -1,8 +1,8 @@
 {
-    "id": "b0eb78ec-7c2c-4ea0-b8b9-514a2f9ddfc5",
+    "id": "99a16c87-19f5-4450-b9bb-d6de8a5009d4",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "CheckCanPlace",
+    "name": "gui_create",
     "IsCompatibility": false,
     "IsDnD": false
 }

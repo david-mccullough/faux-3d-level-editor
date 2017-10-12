@@ -2,7 +2,7 @@
     "id": "85660f15-4d7e-4b43-a4e6-8072d4e9f12c",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr3dBarrel",
+    "name": "spr3dWoodenBarrel",
     "For3D": false,
     "HTile": false,
     "VTile": false,

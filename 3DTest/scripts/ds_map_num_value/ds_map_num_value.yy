@@ -1,8 +1,8 @@
 {
-    "id": "33a5c7d1-3c1e-4282-babf-0657503b5d50",
+    "id": "d9681fe8-d86e-4af1-9869-e5dc07e1c4ac",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "ObjectCanPlace",
+    "name": "ds_map_num_value",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -14,3 +14,6 @@ state = buttonState.idle
 
 guix = x;
 guiy = y;
+
+myPanel = noone;
+myGuiLayer = noone;
