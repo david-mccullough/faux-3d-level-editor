@@ -30,6 +30,11 @@ panel.elements[array_length_1d(panel.elements)] = o;
 for (var i = 6; i <= argument_count; i++)
 	argument[i].elements[array_length_1d(argument[i].elements)] = o;
 	
+/*if panel.myPanel != noone
+{
+	PanelAttach(o,panel)
+}*/
+	
 o.myPanel = panel;
 o.guix = xx;
 o.guiy = yy;

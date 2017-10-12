@@ -5,6 +5,7 @@ guix = 0;
 guiy = 0;
 guixOffset = 0;
 guiyOffset = 0;
+uiVisible = true;
 
 
 _guix = 0;

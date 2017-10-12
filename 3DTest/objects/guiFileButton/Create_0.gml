@@ -12,4 +12,4 @@ pageNumber = false;
 panelGroup = noone;
 
 myPanelGroup = noone;
-
+uiAlpha =1

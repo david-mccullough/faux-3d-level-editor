@@ -9,7 +9,7 @@ var width = string_width(text)
 var height = string_height(text)
 
 if drawRecangle
-draw_rectangle(guix-xmargin-width/2,guiy-ymargin,guix+width/2+xmargin,guiy+height+ymargin, 0);
+draw_rectangle(guix-xmargin-width/2,guiy-ymargin,guix+width/2+xmargin,guiy+height+ymargin-1, 0);
 
 draw_set_color(c_white)
 draw_text(guix,guiy,text);

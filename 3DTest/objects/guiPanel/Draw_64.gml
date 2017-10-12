@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if uiVisible
+{
 if uiSlide
 {
 	if point_in_rectangle(global.gui_mouse_x,global.gui_mouse_y,guix-16,guiy,guix+uiWidth,guiy+uiHeight)
@@ -23,7 +24,7 @@ if uiDrawRectangle
 	draw_set_color(uiBackColor);
 	draw_set_alpha(uiAlpha);
 	
-	draw_rectangle(guix,guiy,guix+uiWidth,guiy+uiHeight,false)
+	draw_rectangle(guix,guiy,guix+uiWidth,guiy+uiHeight-1,false)
 }
 draw_set_alpha(1)
-
+}

@@ -639,6 +639,14 @@
             }
         },
         {
+            "Key": "7e0007b5-edf4-4134-bb5c-5b045590eea2",
+            "Value": {
+                "id": "ee9a1113-7e59-4ad5-bf7a-6db00d349d94",
+                "resourcePath": "scripts\\PanelDisable\\PanelDisable.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7e5d68ba-d414-429d-bf05-05546518af8c",
             "Value": {
                 "id": "eef0e974-5442-40e2-b2c2-9b6bfcd72e7d",
@@ -652,6 +660,14 @@
                 "id": "f1d560d6-ec3c-4014-8f28-95e590a11716",
                 "resourcePath": "views\\7f1180ac-9e43-43bc-a425-41f2a90e4688.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "81a00c2f-9e0d-42c8-b436-a91f922b65d8",
+            "Value": {
+                "id": "f84f6832-4659-4e92-85c0-b092fb141e32",
+                "resourcePath": "sprites\\sprFileButton\\sprFileButton.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1436,7 +1452,8 @@
         "3fabe446-55a5-4b87-bacc-9d017345fb45",
         "9916d8b4-abe8-45b4-b15f-13f494a62e17",
         "b82d832e-60ab-4f2f-8790-69f59aada389",
-        "c0139f31-6ffc-4052-acde-77c030062023"
+        "c0139f31-6ffc-4052-acde-77c030062023",
+        "7e0007b5-edf4-4134-bb5c-5b045590eea2"
     ],
     "tutorial": ""
 }

@@ -1,23 +1,25 @@
 /// @description released behavior
 
-PanelGroupGoTo(myPanelGroup, index);
-
-var ppg = myPanel;
-with guiPanelGroup
+switch(name)
 {
-	var temp = noone;
-	if instance_exists(myPanel) && instance_exists(myPanel.myPanel)
-	{
-		//show_debug_message(myPanel.myPanel.name + " -- " + ppg.name)
-		if myPanel.myPanel.id == ppg
-		{
-			temp = id;
-		}
-	}
-}
-if temp != noone{
-PanelGroupGoTo(temp,temp.panelIndex)
-show_debug_message(temp.name + " wwwwwwwwowie")
+	case "Save":
+		
+		break;
+		
+	case "Load":
+		
+		break;
+		
+	case "Edit":
+		
+		break;
+		
+	case "Options":
+		
+		//PanelToggle();
+		
+		break;
+
 }
 
 

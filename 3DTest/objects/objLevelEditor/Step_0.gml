@@ -33,7 +33,8 @@ if state != editorState.idle
 
 #endregion
 
-
+if keyboard_check_pressed(vk_enter)
+PanelDisable(filePanel)
 
 #region//Pan view
 

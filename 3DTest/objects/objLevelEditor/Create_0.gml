@@ -39,6 +39,7 @@ ds_list_add(global.levels, "testLevel");
 
 myGUI = instance_create_depth(x,y,0,objGUILayer);
 
+///FILE TOOLBAR
 filePanel = gui_create(0,0,1001,guiPanel,myGUI);
 with filePanel
 {
@@ -48,6 +49,11 @@ with filePanel
 	name= "Edit Panel"
 	uiAlpha = 1;
 }
+var temp = gui_create(0,0,1000,guiText,myGUI);
+temp.text = room_get_name(room);
+temp.halign = fa_right;
+//var tempw = string_width(temp.text);
+PanelAttach(temp,filePanel,view_w-16,0,false)
 var arr;
 arr[0] = gui_create(0,0,40,guiFileButton,myGUI);
 arr[1] = gui_create(0,0,40,guiFileButton,myGUI);
@@ -61,9 +67,20 @@ arr[3].text = "Options"
 var t = 0
 while t<4
 {
-	PanelAttach(arr[t],filePanel, 48*t,16,true);
+	PanelAttach(arr[t],filePanel, 32+64*t,8,true);
 	
 	t++
+}
+
+///INFO BAR
+infoPanel = gui_create(0,view_h-16,1001,guiPanel,myGUI);
+with infoPanel
+{
+	uiWidth = view_w
+	uiHeight = 16
+	uiDrawRectangle = true;
+	name= "Info Panel"
+	uiAlpha = .8;
 }
 
 var gx = view_w-128;

@@ -1,7 +1,7 @@
 /// Enable
 if !global.levelEditorEnabled
 {
-	show_debug_overlay(true)
+	//show_debug_overlay(true)
 	instance_activate_object(objLevelEditor)
 	if !instance_exists(objLevelEditor)
 	{
