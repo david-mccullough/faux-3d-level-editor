@@ -17,19 +17,27 @@ var relPos = argument[4]
 
 if relPos
 {
-	xx = xx-panel.x;
-	yy = yy-panel.y;
+	xx = panel.guix+xx;
+	yy = panel.guiy+yy;
 }
 
 //add object to panel
-panel.elements[array_length_1d(panel.elements)] = o;
+if panel.elements[0] == 0
+{
+	panel.elements[0] = o;
+}
+else
+{
+	panel.elements[array_length_1d(panel.elements)] = o;
+}
+
 
 //additional panels
-for (var i = 5; i < argument_count; i++)
+for (var i = 6; i <= argument_count; i++)
 	argument[i].elements[array_length_1d(argument[i].elements)] = o;
 	
 o.myPanel = panel;
-o.x = xx;
-o.y = yy;
+o.guix = xx;
+o.guiy = yy;
 
-return vect2(o.x,o.y)
+return vect2(o.guix,o.guiy)

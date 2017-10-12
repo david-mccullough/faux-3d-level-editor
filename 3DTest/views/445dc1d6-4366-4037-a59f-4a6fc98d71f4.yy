@@ -10,7 +10,8 @@
         "0b698ff4-7642-484f-a2fd-2f77a76ec94b",
         "75b96e51-bdeb-43c0-81dd-4d5ac863678f",
         "cb70d2c4-7dd7-4c1f-afac-61cc312cc044",
-        "5261625f-53c1-48ba-bb01-c7c017edc0fb"
+        "5261625f-53c1-48ba-bb01-c7c017edc0fb",
+        "d9681fe8-d86e-4af1-9869-e5dc07e1c4ac"
     ],
     "filterType": "GMScript",
     "folderName": "Essential Scripts",

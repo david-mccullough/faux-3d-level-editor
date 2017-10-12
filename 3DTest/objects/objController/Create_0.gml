@@ -4,6 +4,7 @@
 #macro C_FOCUS make_colour_rgb(150, 255, 200)
 #macro C_TRUE  make_colour_rgb(50, 255, 100)
 #macro C_FALSE make_colour_rgb(255, 50, 100)
+#macro C_LETEXT c_white
 
 #macro F_DEBUG fntDebug
 #macro F_LE fntLevelEditor

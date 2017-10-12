@@ -8,9 +8,10 @@ var masterPanel = argument[1];
 var maxPerPage = 10;
 var margin = 24;
 
-var gx = 64;
-var gy = 300;
-var dd = 100;
+//var gx = view_w-128;
+//var gy = 16;
+var dd = 80;
+var panelCount = 1;
 
 if argument_count > 2
 {
@@ -22,32 +23,35 @@ if argument_count > 2
 var numResources = ds_list_size(list);
 var numLastPage = numResources%(maxPerPage)
 
-var panel = gui_create(gx,gy,dd,guiPanel,myGUI);
+var panel = gui_create(0,0,dd,guiPanel,myGUI);
 PanelGroupAttach(panel,masterPanel)
+PanelAttach(panel,masterPanel.myPanel,0,16,true);
+panel.name = "1"
 
 //fill panel with resources until full
 var i = 0; //index of list
 var n = 0; //count of resources for current page
+var panelCount = 1;
 
 repeat(numResources)
 {
-	if n < maxPerPage
-	{
-		//create and attach button for each resource
-		var btn = gui_create(gx,gy,dd,guiLEObject,myGUI);
-		PanelAttach(btn,panel,16,16+margin*i,false);
-		btn.identity = list[| i];
-		show_debug_message(btn.y)
+	//create and attach button for each resource
+	var btn = gui_create(0,0,dd,guiLEObject,myGUI);
+	PanelAttach(btn,panel,64,16+margin*n,true);
+	btn.identity = list[| i];
 	
-		n++;
-	}
+	n++;
+	if n >= maxPerPage
 	//when full create new page (panel)
-	else
 	{
-		var panel = gui_create(gx,gy,dd,guiPanel,myGUI);
+		var panel = gui_create(0,0,dd,guiPanel,myGUI);
+		panel.name = string(panelCount);
 		PanelGroupAttach(panel,masterPanel);
+		show_debug_message("Attaching panel," + panel.name + ", to " + masterPanel.name)
+		PanelAttach(panel,masterPanel.myPanel,0,16,true);
 		n = 0; //reset button count
 	}
 
 	i++;
 }
+

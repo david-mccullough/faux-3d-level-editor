@@ -23,12 +23,11 @@ with pg
 	
 	//make sure in bounds
 	index = clamp(index, imin, imax)
-	index = clamp(index, 0, array_length_1d(myPanels)-1)
 	
 	///  Change index
 	currentPanel = myPanels[index];
 	panelIndex = index;
-	show_debug_message("Panel index is now " + string(index))
+	show_debug_message("Panel " + name + " index is now " + string(index))
 
 	/// Activate new current panel
 	if is_array(currentPanel.elements)

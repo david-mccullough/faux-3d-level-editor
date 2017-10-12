@@ -35,8 +35,8 @@ for (var i = 5; i < argument_count; i++)
 }
 	
 o.myGuiLayer = guiLayer;
-o.x = xx;
-o.y = yy;
+o.guix = xx;
+o.guiy = yy;
 o.depth = d
 
 return o

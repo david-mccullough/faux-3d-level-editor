@@ -11,7 +11,7 @@ var i = array_length_1d(pg.myPanels);
 
 //check for custom index placement
 if argument_count>2 then i = argument[2]
-else if i == 1 and pg.myPanels[0] == 0 //this is to overwrite default value
+else if i == 1 and pg.myPanels[0].name == "default" //this is to overwrite default value
 {
 	i = 0
 }

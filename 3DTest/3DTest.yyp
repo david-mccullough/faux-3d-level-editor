@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "36e3d495-acf8-4646-a3f0-89e4a16a3566",
+            "Value": {
+                "id": "c9685671-1df1-4f2a-8103-0b14685de857",
+                "resourcePath": "views\\36e3d495-acf8-4646-a3f0-89e4a16a3566.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "37194392-b563-4c63-ab26-c9fa73c5766d",
             "Value": {
                 "id": "659154a6-106b-49b0-a56c-c54392ba88a8",
@@ -567,6 +575,14 @@
             }
         },
         {
+            "Key": "7944821d-4974-4b3e-ac37-09562ecdec98",
+            "Value": {
+                "id": "7fe3a184-83f5-442f-84c9-fa2b39584bac",
+                "resourcePath": "views\\7944821d-4974-4b3e-ac37-09562ecdec98.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7a47e7fe-9d6f-4bd6-81f4-0d1daf6e34b1",
             "Value": {
                 "id": "65430ddb-9c36-46cd-8f20-b3f714828a11",
@@ -852,6 +868,14 @@
                 "id": "1e42544f-fc74-485f-857d-85b20e06ca01",
                 "resourcePath": "views\\a5da08b6-411d-44a4-b65f-2c47914188cc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a73308dc-4a6c-4f20-a343-f92c1dd76d55",
+            "Value": {
+                "id": "8d3ed420-30fb-4d2c-aa39-beb6b82564f3",
+                "resourcePath": "objects\\ui_ani_control\\ui_ani_control.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1162,7 +1186,7 @@
             "Key": "d83eeed0-3619-4888-87ca-52e765dc1896",
             "Value": {
                 "id": "72129937-38b5-4144-835a-23ae4b44b2e4",
-                "resourcePath": "objects\\objArrowButton\\objArrowButton.yy",
+                "resourcePath": "objects\\guiArrowButton\\guiArrowButton.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1325,6 +1349,7 @@
         "701767d7-4c2f-44f0-ae6a-136d59a05ee2",
         "45ffe77d-2e66-47f8-92f7-8482bd8e9e35",
         "8e5164db-4a29-4e92-81e9-47e4ffb06129",
+        "d9681fe8-d86e-4af1-9869-e5dc07e1c4ac",
         "fe44cb8d-0c65-4623-8446-8d2421d790ae",
         "f17e3b77-da6f-41b3-9b5a-57d62f1e00fe",
         "d596f316-be45-45a4-a055-3f1c2d425670",
@@ -1335,9 +1360,6 @@
         "a21d0af7-5943-4ff5-8b67-4f08e5c6239b",
         "b7a7213c-5451-4825-b103-622852490c11",
         "9c2eda38-a885-4004-893e-c83bd2de5825",
-        "3fabe446-55a5-4b87-bacc-9d017345fb45",
-        "9916d8b4-abe8-45b4-b15f-13f494a62e17",
-        "a4d1103e-ce31-42f4-a321-02a2d0ca1326",
         "ad20b03a-a603-4186-b01c-753d6c689c03",
         "21ed0320-ce3a-4f0e-bc15-00a3a2e4e45f",
         "a3e0f56d-840e-4991-90e4-1260e233137a",
@@ -1348,9 +1370,7 @@
         "96ee7deb-4378-479c-95e1-cd8b1c1f3f8e",
         "2d0d3d27-bd75-4963-8443-2f5ffbd102ae",
         "44d7bc2e-4d72-4f3c-8d0b-672e76e1a557",
-        "b82d832e-60ab-4f2f-8790-69f59aada389",
-        "9e97e819-0e0e-4d28-85b3-a74fe535c199",
-        "300cd595-dfeb-4da7-a2c3-f0aa5359b0eb",
+        "a4d1103e-ce31-42f4-a321-02a2d0ca1326",
         "3e8eda01-5c03-4369-91bb-3fe0f7f8dd4a",
         "260ecdcf-6079-4957-905c-ab1237fb6b12",
         "02e5a778-444c-43fc-a637-55bf461bd0ee",
@@ -1358,12 +1378,16 @@
         "21b7157b-9106-435a-9ee5-58ec9798b4b8",
         "bd4903cc-e433-43db-b363-c19b85fe6dc5",
         "33a5c7d1-3c1e-4282-babf-0657503b5d50",
+        "9e97e819-0e0e-4d28-85b3-a74fe535c199",
+        "300cd595-dfeb-4da7-a2c3-f0aa5359b0eb",
         "5accd837-5884-4c52-8082-0b9c171b51ba",
         "f05294ea-d5e6-40e6-b163-ec2cef2c30cd",
         "cf7148ab-a241-43d1-b7ee-35600bfc87f4",
         "99a16c87-19f5-4450-b9bb-d6de8a5009d4",
-        "d9681fe8-d86e-4af1-9869-e5dc07e1c4ac",
-        "bb64114e-da5e-4481-8ccc-0bfc5fa34400"
+        "bb64114e-da5e-4481-8ccc-0bfc5fa34400",
+        "b82d832e-60ab-4f2f-8790-69f59aada389",
+        "3fabe446-55a5-4b87-bacc-9d017345fb45",
+        "9916d8b4-abe8-45b4-b15f-13f494a62e17"
     ],
     "tutorial": ""
 }

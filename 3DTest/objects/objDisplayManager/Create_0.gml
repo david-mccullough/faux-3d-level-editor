@@ -1,7 +1,7 @@
 ///Properties
 ideal_width=0; //Doesn't matter because we are going to calculate this.
 ideal_height=256; 
-zoom = 1;
+zoom = 3;
 max_zoom=1;
 use_sub_pixels=true;
 
