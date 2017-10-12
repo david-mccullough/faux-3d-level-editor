@@ -1,6 +1,6 @@
 /// @description Define layers
-layers = ds_list_create();
-ds_list_add(layers, guiLayerLevelEditor);
+//layers = ds_list_create();
+//ds_list_add(layers, guiLayerLevelEditor);
 
 
 global.gui_mouse_x = (mouse_x-view_x)//*objDisplayManager.gui_x_scale;

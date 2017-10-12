@@ -11,3 +11,4 @@ if instance_exists(objLevelEditor)
 		state = editorState.paint;
 	}
 }
+state = buttonState.idle;
