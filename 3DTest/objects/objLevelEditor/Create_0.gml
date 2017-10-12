@@ -30,8 +30,8 @@ canPlace = true;
 //control
 drag_x = 0;
 drag_y = 0;
-xplace = x;
-yplace = y;
+xplace = 0;
+yplace = 0;
 ds_list_add(global.levels, "testLevel");
 
 
@@ -140,8 +140,7 @@ PanelAttach(d3dPG, d3dPanel, 0,0,true);
 d3dPG.name= "3D Object Pages"
 
 /// Create panels for however pages are necessary to fit all resources of d3d type
-PopulateResourcePanel(global.d3dObjects,d3dPG,2,16);
-PanelGroupReset(d3dPG,0);
+PopulateResourcePanel(global.d3dObjects,d3dPG,12,16);
 
 ///-------------------d2d panel
 d2dPanel = gui_create(0,0,dd,guiPanel,myGUI);
@@ -155,10 +154,41 @@ PanelAttach(d2dPG, d2dPanel, 0,0,true);
 d2dPG.name= "2D Object Pages"
 
 PopulateResourcePanel(global.d2dObjects,d2dPG,8,16);
+
+///-------------------ent panel
+entPanel = gui_create(0,0,dd,guiPanel,myGUI);
+entPanel.name = "Entity Objects"
+PanelGroupAttach(entPanel, resourcePG);
+PanelAttach(entPanel,editPanel,0,48,true);
+
+//d2d panelgroup (container for panels with object lists)
+entPG = gui_create(0,0,dd,guiPanelGroup,myGUI);
+PanelAttach(entPG, entPanel, 0,0,true);
+entPG.name= "Entity Object Pages"
+
+PopulateResourcePanel(global.entObjects,entPG,8,16);
+
+///-------------------oth panel
+othPanel = gui_create(0,0,dd,guiPanel,myGUI);
+othPanel.name = "Other Objects"
+PanelGroupAttach(othPanel, resourcePG);
+PanelAttach(othPanel,editPanel,0,48,true);
+
+//d2d panelgroup (container for panels with object lists)
+othPG = gui_create(0,0,dd,guiPanelGroup,myGUI);
+PanelAttach(othPG, othPanel, 0,0,true);
+othPG.name= "Other Object Pages"
+
+PopulateResourcePanel(global.miscObjects,othPG,8,16);
+
+
 PanelGroupReset(d2dPG,0);
-
-
+PanelGroupReset(entPG,0);
+PanelGroupReset(othPG,0);
 PanelGroupReset(resourcePG,0);
+PanelGroupReset(d3dPG,0);
+
+
 
 #endregion
 

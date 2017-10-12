@@ -33,7 +33,6 @@ PanelAttach(larrow,panelGroup.myPanel,16,8,true);
 PanelAttach(rarrow,panelGroup.myPanel,panelGroup.myPanel.uiWidth-16,8,true);
 PanelAttach(txt,panelGroup.myPanel,panelGroup.myPanel.uiWidth/2,0,true);
 
-
 //get number of relevant resources and set max resources per page
 var numResources = ds_list_size(list);
 var numLastPage = numResources%(maxPerPage)

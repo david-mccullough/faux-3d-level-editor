@@ -34,7 +34,7 @@ if state != editorState.idle
 #endregion
 
 if keyboard_check_pressed(vk_enter)
-PanelDisable(filePanel)
+show_debug_message(PanelToggle(editPanel, !editPanel.uiVisible))
 
 #region//Pan view
 

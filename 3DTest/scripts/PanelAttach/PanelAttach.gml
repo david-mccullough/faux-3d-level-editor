@@ -29,11 +29,11 @@ panel.elements[array_length_1d(panel.elements)] = o;
 //additional panels
 for (var i = 6; i <= argument_count; i++)
 	argument[i].elements[array_length_1d(argument[i].elements)] = o;
-	
-/*if panel.myPanel != noone
+
+if panel.myPanel != noone
 {
-	PanelAttach(o,panel)
-}*/
+	PanelAttach(o,panel.myPanel,xx,yy,false)
+}
 	
 o.myPanel = panel;
 o.guix = xx;

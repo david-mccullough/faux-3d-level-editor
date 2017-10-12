@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "70d0b73f-da2e-4656-a532-7a1b2b0780dc",
+            "Value": {
+                "id": "9ee757e9-8249-4ecb-b639-82f366d352b6",
+                "resourcePath": "objects\\objEntity\\objEntity.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "717240b2-59a6-4740-be3d-0c7229e82aed",
             "Value": {
                 "id": "b31b4b6a-111e-460d-bee7-3e036b32bb2b",
@@ -642,7 +650,7 @@
             "Key": "7e0007b5-edf4-4134-bb5c-5b045590eea2",
             "Value": {
                 "id": "ee9a1113-7e59-4ad5-bf7a-6db00d349d94",
-                "resourcePath": "scripts\\PanelDisable\\PanelDisable.yy",
+                "resourcePath": "scripts\\PanelToggle\\PanelToggle.yy",
                 "resourceType": "GMScript"
             }
         },
