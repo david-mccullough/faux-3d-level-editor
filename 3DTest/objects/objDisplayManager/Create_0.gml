@@ -1,8 +1,9 @@
 ///Properties
 ideal_width=0; //Doesn't matter because we are going to calculate this.
 ideal_height=256; 
-zoom = 3;
+zoom = 2;
 max_zoom=1;
+min_zoom=2;
 use_sub_pixels=true;
 
 //Aspect ratio
@@ -23,7 +24,7 @@ if(ideal_height & 1)
   ideal_height++;
  
  
-max_zoom = floor(display_get_width()/ideal_width);
+max_zoom = floor(display_get_width()/ideal_width)+1;
 
 surface_resize(application_surface,ideal_width,ideal_height);
 display_set_gui_size(ideal_width,ideal_height);

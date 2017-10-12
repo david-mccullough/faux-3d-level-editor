@@ -1,10 +1,15 @@
 /// @description State mgmt
+if myPanel != noone
+{
+	guix = (guixOffset+myPanel.guix)
+	guiy = (guiyOffset+myPanel.guiy)
+}
 x = (guix+view_x)
 y = (guiy+view_y)
 switch state
 {
 	case buttonState.idle:
-		var_saturation = 0.0;
+		var_saturation = satIdle;
 		
 		if mouseOver {state = buttonState.hover}
 	

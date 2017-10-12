@@ -10,7 +10,6 @@
 #macro F_LE fntLevelEditor
 
 #endregion
-
 draw_set_font(F_DEBUG)
 
 #region // Object Name Macros
@@ -49,8 +48,6 @@ draw_set_font(F_DEBUG)
 		
 #endregion
 global.numObjects = ds_map_size(global.objectMap)
-//global.num3dObjects = ds_list_size(global.d3dObjects)//ds_map_num_value(global.objectMap, obj3D);
-//global.num2dObjects = ds_map_num_value(global.objectMap, obj2D);
 
 #region // Level Editor
 
@@ -86,8 +83,6 @@ if !file_exists("ignore.txt")
 #macro DIR_STORAGE filename_path("ignore.txt")
 show_debug_message("STORAGE DIRECTORY: " + DIR_STORAGE)
 
-#endregion
-
 if global.levelEditorEnabled && LOAD_INCLUDED_LEVELDATA
 {
 	if show_question("Do you want to load locally saved level data?" +
@@ -107,4 +102,6 @@ else if LOAD_INCLUDED_LEVELDATA
 
 //zip_unzip("BeeChillLogo.zip",DIR_STORAGE)
 //global.logo = sprite_add(DIR_STORAGE + "BeeChillLogo.gif",1,false,false,0,0);
+
+#endregion
 

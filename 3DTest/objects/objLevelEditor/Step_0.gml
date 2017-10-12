@@ -79,7 +79,7 @@ switch (state)
 			}
 		
 		//"color" picking functionality
-		if mbmPressed or (altHeld and mblPressed)
+		if (altHeld and mblPressed)
 		{
 			if (hit != noone)
 			{
@@ -98,6 +98,8 @@ switch (state)
 				//delete it but copy its relevant data
 				angle = hit.angle;
 				editIdentity = hit.identity;
+				xplace = hit.x-x;
+				yplace = hit.y-y;
 				show_debug_message("selected identity: " + editIdentity + " with angle " + string(angle))
 				editObject = IdentityGetObject(editIdentity)
 				editSprite= IdentityGetSprite(editIdentity)
@@ -137,7 +139,9 @@ switch (state)
 		if mblReleased
 		{
 			//create copy of instance
-			ObjectCreate(mouse_x,mouse_y, editIdentity, angle);
+			ObjectCreate(mouse_x+xplace,mouse_y+yplace, editIdentity, angle);
+			xplace = 0;
+			yplace = 0;
 			
 			state = editorState.idle;
 		}
@@ -145,6 +149,8 @@ switch (state)
 		{
 			//since object is already technically deleted, just change state
 			state = editorState.idle;
+			xplace = 0;
+			yplace = 0;
 		}
 	
 	break;

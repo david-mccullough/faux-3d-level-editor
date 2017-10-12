@@ -5,6 +5,6 @@ if(keyboard_check_pressed(vk_f4))
 }
 if(keyboard_check_pressed(vk_f3))
 {
-  display_change_zoom(wrap(zoom+1,1,max_zoom));
+  display_change_zoom(wrap(zoom+1,min_zoom,max_zoom));
 }
   

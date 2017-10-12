@@ -1,6 +1,23 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if uiSlide
+{
+	if point_in_rectangle(global.gui_mouse_x,global.gui_mouse_y,guix-16,guiy,guix+uiWidth,guiy+uiHeight)
+	{
+		_guix = uiSlideXOrig;
+		_guiy = uiSlideYOrig;
+	}
+	else
+	{
+		_guix = uiSlideX;
+		_guiy = uiSlideY;
+	}
+	guix = smooth_approach(guix,_guix,uiSlideSpeed)
+	guiy = smooth_approach(guiy,_guiy,uiSlideSpeed)
+}
+
+
 if uiDrawRectangle
 {
 	draw_set_color(uiBackColor);
@@ -9,3 +26,4 @@ if uiDrawRectangle
 	draw_rectangle(guix,guiy,guix+uiWidth,guiy+uiHeight,false)
 }
 draw_set_alpha(1)
+

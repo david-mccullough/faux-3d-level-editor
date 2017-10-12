@@ -3,6 +3,19 @@
 name = "panel"
 guix = 0;
 guiy = 0;
+guixOffset = 0;
+guiyOffset = 0;
+
+
+_guix = 0;
+_guiy = 0;
+uiSlide = false;
+uiSlideSpeed = .2;
+uiSlideX = 0;
+uiSlideY = 0;
+uiSlideXOrig = 0;
+uiSlideYOrig = 0;
+
 uiWidth= 128
 uiHeight = 900;
 
@@ -19,3 +32,4 @@ elements = array_create(0,0) //will be array of childed gui elements
 myPanelGroup = noone;
 panelIndex = 0;
 myPanel = noone;
+

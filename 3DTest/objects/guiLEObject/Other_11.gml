@@ -12,3 +12,5 @@ if instance_exists(objLevelEditor)
 	}
 }
 state = buttonState.idle;
+with object_index {satIdle = 0.0}
+satIdle = 0.3;

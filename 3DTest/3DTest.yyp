@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "4b825793-5a6e-4275-8e51-d3628280da3f",
+            "Value": {
+                "id": "e1eafb36-484d-4d15-8e27-eb2c37feb652",
+                "resourcePath": "objects\\guiFileButton\\guiFileButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4c4f7ec9-7a6c-4353-bbf5-f31417fb061f",
             "Value": {
                 "id": "4fb3f22e-ed8a-4e7e-abfb-a951b93fc1e7",
@@ -1084,6 +1092,14 @@
                 "id": "6b9be8f9-5728-4517-a664-375742e91a88",
                 "resourcePath": "sprites\\spr3dCrate\\spr3dCrate.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c4d48447-232f-49a0-8d11-cd930e2f0465",
+            "Value": {
+                "id": "4450485a-a36e-4026-a61d-df09483676a6",
+                "resourcePath": "objects\\guiElement\\guiElement.yy",
+                "resourceType": "GMObject"
             }
         },
         {

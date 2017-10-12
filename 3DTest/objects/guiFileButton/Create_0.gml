@@ -1,12 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 event_inherited();
+isSat = true;
+index = 0;
+state = buttonState.idle;
 text = "text"
-drawRecangle = true;
 
 ymargin = 0;
 xmargin = 4
 pageNumber = false;
 panelGroup = noone;
-halign = fa_center
+
+myPanelGroup = noone;
 

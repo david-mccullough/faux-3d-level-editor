@@ -1,9 +1,5 @@
 /// @description state
 //if last or first panels, set appropiate buttons to disabled
-if index == myPanelGroup.panelIndex
-{
-	state = buttonState.disabled
-}
 if myPanel != noone
 {
 	guix = (guixOffset+myPanel.guix)

@@ -11,6 +11,7 @@ mouseOver = false
 var_saturation = 0.0;
 saturation = shader_get_uniform(shSaturation, "sat");
 satDisabled = -0.5
+satIdle = 0.0
 isActive = true;
 
 guix = x;

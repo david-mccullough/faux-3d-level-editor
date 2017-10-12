@@ -1,11 +1,17 @@
 /// @description state
 //if last or first panels, set appropiate buttons to disabled
+
+
 if (sign(dir) == 1 and myPanelGroup.panelIndex == myPanelGroup.numPanels-1)
 or (sign(dir) == -1 and myPanelGroup.panelIndex == 0)
 {
 	state = buttonState.disabled
 }
-
+if myPanel != noone
+{
+	guix = (guixOffset+myPanel.guix)
+	guiy = (guiyOffset+myPanel.guiy)
+}
 x = (guix+view_x)
 y = (guiy+view_y)
 switch state

@@ -33,5 +33,6 @@ for (var i = 6; i <= argument_count; i++)
 o.myPanel = panel;
 o.guix = xx;
 o.guiy = yy;
-
+o.guixOffset = xx-panel.guix
+o.guiyOffset = yy-panel.guiy
 return vect2(o.guix,o.guiy)
