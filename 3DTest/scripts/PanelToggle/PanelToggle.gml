@@ -1,5 +1,5 @@
 ///@param panel
-///@parm bool
+///@param bool
 
 if !argument1
 {

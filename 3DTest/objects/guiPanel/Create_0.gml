@@ -16,6 +16,7 @@ uiSlideX = 0;
 uiSlideY = 0;
 uiSlideXOrig = 0;
 uiSlideYOrig = 0;
+uiSlideFreeze = false
 
 uiWidth= 128
 uiHeight = 900;
@@ -26,6 +27,8 @@ uiDrawRectangle=false;
 uiPanelSprite = -1;
 uiImageIndex=0;
 uiImageScale = 1.0;
+uiDrawXOffset = 0
+uiDrawYOffset = 0
 
 elements = array_create(0,0) //will be array of childed gui elements
 //page.elements[array_length_1d(page.elements)-1] = obj;

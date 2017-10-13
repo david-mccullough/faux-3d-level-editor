@@ -1,6 +1,21 @@
 x = round(mouse_x);
 y = round(mouse_y);
 
+if ghostObject == noone
+{
+	ghostObject = instance_create_depth(-999,-999,0,editObject)
+	ghostObject.identity = editIdentity
+	ghostObject.visible = false;
+}
+if editIdentity != ghostObject.identity
+{
+	instance_destroy(ghostObject)
+	ghostObject = instance_create_depth(-999,-999,0,editObject)
+	ghostObject.identity = editIdentity
+	ghostObject.visible = false;
+}
+
+
 //Saving
 if controlHeld && keyboard_check_pressed(ord("S"))
 {
@@ -12,14 +27,11 @@ if controlHeld && keyboard_check_pressed(ord("S"))
 if state != editorState.idle
 {
 	//update canPlace
-	//canPlace = ObjectCanPlace(x,y,editObject);
-	if canPlace then editColor = C_TRUE
-	else editColor = C_FALSE
-
+	canPlace = ObjectCanPlace(x+xplace,y+yplace,ghostObject);
 	
 	// Adjust angle //
 	var mult = 1;
-	if shiftHeld {mult = 30}
+	if shiftHeld {mult = angleSnap}
 		
 	angle += mult*(mwUp - mwDown);
 	if (angle < 0) {angle = 359}
@@ -27,7 +39,7 @@ if state != editorState.idle
 		
 	//snap to multiples of 30
 	if shiftHeld && (mwUp || mwDown) {
-	angle = floor(angle/30)*30
+	angle = floor(angle/angleSnap)*angleSnap
 	}
 }
 
@@ -174,5 +186,4 @@ switch (state)
 	
 }
 
-
-
+minSinceLastSave += (1/room_speed)/60

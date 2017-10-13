@@ -50,7 +50,8 @@ if (file_exists(DIR_LEVELDATA + filename))
 	if overwrite
 	{
 		buffer_save(buff, DIR_LEVELDATA + filename)
-		show_message_async(filename + " successfully saved to directory:\n" + DIR_STORAGE + DIR_LEVELDATA)
+		objLevelEditor.minSinceLastSave = 0;
+		//show_message_async(filename + " successfully saved to directory:\n" + DIR_STORAGE + DIR_LEVELDATA)
 	}
 	else
 	{
@@ -60,7 +61,8 @@ if (file_exists(DIR_LEVELDATA + filename))
 else
 {
 	buffer_save(buff, DIR_LEVELDATA + filename)
-	show_message_async(filename + " successfully saved to directory:\n" + DIR_STORAGE + DIR_LEVELDATA)
+	objLevelEditor.minSinceLastSave = 0;
+	//show_message_async(filename + " successfully saved to directory:\n" + DIR_STORAGE + DIR_LEVELDATA)
 }
 
 buffer_delete(buff)

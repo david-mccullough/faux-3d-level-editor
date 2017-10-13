@@ -13,9 +13,6 @@ enum editorState
 
 state = editorState.idle;
 
-global.levels = ds_list_create();
-
-
 editIdentity = O_DCRATE
 editObject = IdentityGetObject(editIdentity);
 editSprite = IdentityGetSprite(editIdentity);
@@ -23,6 +20,10 @@ editSprite = IdentityGetSprite(editIdentity);
 angle = 0;
 editColor = C_TRUE
 canPlace = true;
+ghostObject = noone;
+
+
+minSinceLastSave = 0;
 
 //sortDepth = true;
 //myDepth = 0;
@@ -32,14 +33,15 @@ drag_x = 0;
 drag_y = 0;
 xplace = 0;
 yplace = 0;
-ds_list_add(global.levels, "testLevel");
+angleSnap = 30;
+gridSnap = 0;
 
 
 #region // GUI
 
 myGUI = instance_create_depth(x,y,0,objGUILayer);
 
-///FILE TOOLBAR
+#region ///FILE TOOLBAR
 filePanel = gui_create(0,0,1001,guiPanel,myGUI);
 with filePanel
 {
@@ -62,8 +64,8 @@ arr[3] = gui_create(0,0,40,guiFileButton,myGUI);
 //arr[4] = gui_create(0,0,40,guiFileButton,myGUI);
 arr[0].text = "Save"
 arr[1].text = "Load"
-arr[2].text = "Edit"
-arr[3].text = "Options"
+arr[2].text = "Options"
+arr[3].text = "Resources"
 var t = 0
 while t<4
 {
@@ -71,23 +73,71 @@ while t<4
 	
 	t++
 }
+#endregion
 
-///INFO BAR
-infoPanel = gui_create(0,view_h-16,1001,guiPanel,myGUI);
+#region ///INFO BAR
+infoPanel = gui_create(0,view_h-16,700,guiPanel,myGUI);
 with infoPanel
 {
 	uiWidth = view_w
 	uiHeight = 16
 	uiDrawRectangle = true;
 	name= "Info Panel"
-	uiAlpha = .8;
+	uiAlpha = 1;
 }
 
 var gx = view_w-128;
 var gy = 0;
 var dd = 100;
 
-//overacrhing edit panel
+#endregion
+
+#region ///HELPER PANELS
+
+optionsPanel = gui_create(0,view_h-128,999,guiPanel,myGUI);
+with optionsPanel
+{
+	uiWidth = 160
+	uiHeight = 160
+	uiDrawYOffset = 16;
+	uiDrawRectangle = true;
+	name= "Options"
+	uiAlpha = .8;
+}
+var temp = gui_create(0,0,810,guiText,myGUI);
+temp.text = "Options";
+temp.halign = fa_center;
+//var tempw = string_width(temp.text);
+PanelAttach(temp,optionsPanel,24,0,true)
+with optionsPanel
+{
+	uiSlide = true;
+	_guix = guix;
+	_guiy = guiy;
+	uiSlideXOrig = guix;
+	uiSlideYOrig = view_h-128;
+	uiSlideX = guix;
+	uiSlideY = view_h-32;
+	uiSlideSpeed = 0.15
+}
+var temp = gui_create(0,0,800,guiTextField,myGUI);
+temp.link = linkType.angleSnap;
+temp.text = string(angleSnap);
+temp.name = "Angle Snap"
+//temp.halign = fa_center;
+//var tempw = string_width(temp.text);
+PanelAttach(temp,optionsPanel,temp.sprite_width/2+8,64,true)
+var temp = gui_create(0,0,800,guiTextField,myGUI);
+temp.link = linkType.gridSnap;
+temp.text = string(gridSnap);
+temp.name = "Grid Snap"
+//temp.halign = fa_center;
+//var tempw = string_width(temp.text);
+PanelAttach(temp,optionsPanel,temp.sprite_width/2+8,32,true)
+
+#endregion
+
+#region//overacrhing edit panel
 editPanel = gui_create(gx,gy,1000,guiPanel,myGUI);
 editPanel.uiDrawRectangle = true;
 editPanel.name= "Edit Panel"
@@ -188,6 +238,7 @@ PanelGroupReset(othPG,0);
 PanelGroupReset(resourcePG,0);
 PanelGroupReset(d3dPG,0);
 
+#endregion
 
 
 #endregion

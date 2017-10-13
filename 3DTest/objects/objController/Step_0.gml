@@ -13,5 +13,5 @@ else if keyboard_check_pressed(vk_add)
 
 if keyboard_check_pressed(vk_escape)
 {
-	game_end();
+	GameClose();
 }

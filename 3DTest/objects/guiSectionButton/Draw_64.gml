@@ -23,7 +23,7 @@ var height = string_height(text)
 //draw_rectangle(guix-xmargin-width/2,guiy-ymargin,guix+width/2+xmargin,guiy+height+ymargin, 0);
 
 draw_set_color(c_white)
-draw_text_ext_transformed(guix,guiy-4,text,1,-1,.5,.5,0);
+draw_text_ext_transformed(guix,guiy-4,text,1,-1,.6,.6,0);
 
 
 draw_set_halign(fa_left);

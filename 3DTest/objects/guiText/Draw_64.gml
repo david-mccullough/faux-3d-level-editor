@@ -4,7 +4,6 @@ draw_set_font(F_LE)
 draw_set_halign(halign)
 draw_set_color(c_black);
 
-
 var width = string_width(text)
 var height = string_height(text)
 

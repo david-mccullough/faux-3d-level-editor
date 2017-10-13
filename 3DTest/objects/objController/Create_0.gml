@@ -42,7 +42,7 @@ draw_set_font(F_DEBUG)
 	global.d2dObjects = ds_list_create();
 	
 	#macro O_PUDDLE		"Puddle"
-	ds_map_add(global.objectMap, O_PUDDLE, obj2D);
+	ds_map_add(global.objectMap, O_PUDDLE, objGround);
 	ds_list_add(global.d2dObjects,O_PUDDLE);
 	
 	#endregion
@@ -72,6 +72,7 @@ ds_list_sort(global.d3dObjects,1);
 ds_list_sort(global.d2dObjects,1);
 ds_list_sort(global.entObjects,1);
 ds_list_sort(global.miscObjects,1);
+
 
 #region // Level Editor
 
@@ -128,4 +129,8 @@ else if LOAD_INCLUDED_LEVELDATA
 //global.logo = sprite_add(DIR_STORAGE + "BeeChillLogo.gif",1,false,false,0,0);
 
 #endregion
+
+//if !ds_exists(global.levels,ds_type_list)
+global.levels = ds_list_create();
+//LoadLevelList();
 

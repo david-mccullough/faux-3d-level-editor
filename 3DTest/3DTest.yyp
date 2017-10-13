@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "2d6a6ce0-27c1-4977-a5ef-5a7ae6256d37",
+            "Value": {
+                "id": "b3274e2b-db83-403d-b7be-d330e161e98a",
+                "resourcePath": "objects\\guiTextField\\guiTextField.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "300cd595-dfeb-4da7-a2c3-f0aa5359b0eb",
             "Value": {
                 "id": "644a3c8d-4d3f-4c75-8eb6-dc0d2c748502",
@@ -519,6 +527,14 @@
             }
         },
         {
+            "Key": "6da5111a-97bb-4711-84da-0f4ab0f32f5a",
+            "Value": {
+                "id": "45a40f6d-1ce0-4507-bb14-68dc76b8d162",
+                "resourcePath": "sprites\\sprTextField\\sprTextField.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "701767d7-4c2f-44f0-ae6a-136d59a05ee2",
             "Value": {
                 "id": "821be44e-ec83-4152-b66e-791cc9e05e14",
@@ -700,6 +716,14 @@
                 "id": "9309e432-d77e-497d-99df-ed32079a4d9f",
                 "resourcePath": "sprites\\spr3dTree\\spr3dTree.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8848d488-c981-4581-827d-c69adc43d770",
+            "Value": {
+                "id": "f8ef6985-55ad-4054-b34a-ffdd522d49fe",
+                "resourcePath": "scripts\\LoadLevelList\\LoadLevelList.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -980,6 +1004,14 @@
                 "id": "146f23f4-ea3a-4873-aaa0-38b96dacf659",
                 "resourcePath": "scripts\\GetGCF\\GetGCF.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "aea515c0-48c7-4c12-83c4-666654487e5b",
+            "Value": {
+                "id": "99a4f6f9-599a-407c-ba56-cca72ec0804f",
+                "resourcePath": "rooms\\room1\\room1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1359,6 +1391,14 @@
             }
         },
         {
+            "Key": "f7ea978c-34ac-4797-b00e-b0f8c82c96f9",
+            "Value": {
+                "id": "91b1bbeb-3a44-4003-85e7-645e9e41d893",
+                "resourcePath": "scripts\\GameClose\\GameClose.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fdc96487-bcb4-4403-bf04-7c1b8dddff63",
             "Value": {
                 "id": "eec8aeb3-4d30-4c23-9f75-31bbdf8ca0bd",
@@ -1461,7 +1501,9 @@
         "9916d8b4-abe8-45b4-b15f-13f494a62e17",
         "b82d832e-60ab-4f2f-8790-69f59aada389",
         "c0139f31-6ffc-4052-acde-77c030062023",
-        "7e0007b5-edf4-4134-bb5c-5b045590eea2"
+        "7e0007b5-edf4-4134-bb5c-5b045590eea2",
+        "8848d488-c981-4581-827d-c69adc43d770",
+        "f7ea978c-34ac-4797-b00e-b0f8c82c96f9"
     ],
     "tutorial": ""
 }
