@@ -33,4 +33,3 @@ Quick save - Control + S
 
 
 Note: Level data is only saved to your local machine, even when pushing to the repository. To include your levels with the gamemaker project files so that they can be staged for the repo, run the “zipLevelData.bat” script in \YOURLOCALREPO\Tools\
-hjhjkhjh
