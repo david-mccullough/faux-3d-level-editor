@@ -1,5 +1,4 @@
-﻿# Faux3D-LevelEditor
-An in-engine level editor built for faux-3D objects using layered sprites in GMS2.
+# An in-engine level editor built for faux-3D objects using layered sprites in GMS2.
 
 # Level Editor Manual
 Last updated: 10/12/2017
